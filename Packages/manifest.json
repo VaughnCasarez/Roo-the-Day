@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.meta.xr.sdk.core": "205.0.0",
     "com.unity.feature.development": "1.0.2",
     "com.unity.inputsystem": "1.19.0",
     "com.unity.learn.iet-framework": "6.0.6",
@@ -11,6 +12,7 @@
     "com.unity.xr.core-utils": "2.6.0",
     "com.unity.xr.hands": "1.8.1",
     "com.unity.xr.interaction.toolkit": "3.5.1",
+    "com.unity.xr.legacyinputhelpers": "2.1.13",
     "com.unity.xr.management": "4.6.0",
     "com.unity.xr.meta-openxr": "2.5.1",
     "com.unity.xr.openxr": "1.17.1",
