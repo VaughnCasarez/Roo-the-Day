@@ -119,6 +119,114 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &206768
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 113275806}
+    m_Modifications:
+    - target: {fileID: 1779182268423725111, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.72891
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779182268423725111, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779182268423725111, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.83339
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779182268423725111, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779182268423725111, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779182268423725111, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000000057601163
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779182268423725111, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000057601163
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779182268423725111, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779182268423725111, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779182268423725111, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711855263155751858, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+      propertyPath: m_Name
+      value: Circle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711855263155751858, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+--- !u!1 &113275804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 113275806}
+  - component: {fileID: 113275805}
+  m_Layer: 0
+  m_Name: SpellSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &113275805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113275804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e62375fc4a0014f9438cc65aead3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpellSpawner
+  objects:
+  - {fileID: 445710954}
+--- !u!4 &113275806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113275804}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.99497, y: 0.03168, z: 1.19437}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 445710957}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &240868391 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1670256625, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
@@ -163,7 +271,19 @@ MonoBehaviour:
   recognitionThreshold: 0.9
   OnRecognized:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 113275805}
+        m_TargetAssemblyTypeName: SpellSpawner, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &245630689
 Transform:
   m_ObjectHideFlags: 0
@@ -416,6 +536,16 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1024937739}
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+--- !u!1 &445710954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5711855263155751858, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+  m_PrefabInstance: {fileID: 206768}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &445710957 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1779182268423725111, guid: 54b612e37ee0bd54ca3e327aa2b4bb06, type: 3}
+  m_PrefabInstance: {fileID: 206768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &550790949 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 33e8fb956bc8a3e4ebce0fa5450047d0, type: 3}
@@ -856,3 +986,4 @@ SceneRoots:
   - {fileID: 245630689}
   - {fileID: 410441909}
   - {fileID: 1613795520}
+  - {fileID: 113275806}
