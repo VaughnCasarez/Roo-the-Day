@@ -5,7 +5,7 @@ public class RiftSProjectileShooter : MonoBehaviour
 {
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] Transform launchPoint;
-    [SerializeField] XRNode inputSource = XRNode.LeftHand;
+    [SerializeField] XRNode inputSource = XRNode.RightHand;
     [SerializeField] float launchSpeed = 12f;
     [SerializeField] float fireCooldown = 0.25f;
 
@@ -20,7 +20,7 @@ public class RiftSProjectileShooter : MonoBehaviour
             inputDevice = InputDevices.GetDeviceAtXRNode(inputSource);
         }
 
-        if (!inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool isPressed))
+        if (!inputDevice.TryGetFeatureValue(CommonUsages.secondaryButton, out bool isPressed))
         {
             return;
         }
