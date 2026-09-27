@@ -1,0 +1,28 @@
+{
+    "name": "com.audiokinetic.wwise.openxr",
+    "version": "2025.1.6",
+    "displayName": "Wwise Unity OpenXR Motion",
+    "description": "Wwise Motion haptics support via OpenXR for Meta Quest devices",
+    "unity": "2021.3",
+    "unityRelease": "32f1",
+    "dependencies": {
+        "com.unity.xr.openxr": "1.16.1"
+    },
+    "keywords": [
+        "Wwise",
+        "wwise",
+        "audiokinetic",
+        "ak",
+        "Audiokinetic",
+        "OpenXR",
+        "openxr",
+        "motion",
+        "haptics",
+        "VR"
+    ],
+    "author": {
+        "name": "Audiokinetic Inc.",
+        "email": "info@audiokinetic.com",
+        "url": "https://www.audiokinetic.com"
+    }
+}

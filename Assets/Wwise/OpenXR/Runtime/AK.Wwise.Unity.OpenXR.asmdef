@@ -1,0 +1,33 @@
+{
+    "name": "AK.Wwise.Unity.OpenXR",
+    "rootNamespace": "",
+    "references": [
+        "AK.Wwise.Unity.API",
+        "AK.Wwise.Unity.MonoBehaviour",
+        "Unity.XR.OpenXR",
+        "Unity.InputSystem",
+        "AK.Wwise.Unity.Logging"
+    ],
+    "includePlatforms": [
+        "Android",
+        "Editor",
+        "WindowsStandalone32",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "!UNITY_SERVER"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.xr.openxr",
+            "expression": "[1.16.1]",
+            "define": "AK_ENABLE_OPENXR"
+        }
+    ],
+    "noEngineReferences": false
+}
