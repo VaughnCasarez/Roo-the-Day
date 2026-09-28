@@ -1,6 +1,35 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1312517904	Wizard_Tower_Theme			\Music\Wizard_Tower_Theme	
+	2837384057	Stop_Music			\Music\Stop_Music	
+	3991942870	Music			\Music\Music	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	444815956	PlayerLife			\Default Work Unit\PlayerLife	
+	762757699	Gameplay_State			\Default Work Unit\Gameplay_State	
+	3826569560	Music_State			\Default Work Unit\Music_State	
+
+State	ID	Name	State Group			Notes
+	655265632	Alive	PlayerLife			
+	748895195	None	PlayerLife			
+	2791675679	Defeated	PlayerLife			
+	579523862	Explore	Gameplay_State			
+	748895195	None	Gameplay_State			
+	1737926756	Tower	Gameplay_State			
+	89505537	Gameplay	Music_State			
+	748895195	None	Music_State			
+	1560169506	Boss	Music_State			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	1040865389	Wizard_Tower_Theme	.cache\40\{407F5631-E118-89BF-2180-C966AAFD4972}.wem		\Containers\Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Wizard_Tower_Theme		21470776
+	84930074	Mus_Level1_Explore_Darkside_ 70_Lp	.cache\3F\{3F13A42F-6A7B-A8A7-3635-3A6D9D462625}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Darkside_ 70_Lp		870728
+	119559225	Mus_Level1_Explore_Cassette_ 70_Lp	.cache\92\{9263C557-A5C8-8ADD-950B-A2E5284E77C5}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Cassette_ 70_Lp		968641
+	158150885	Mus_Level1_Explore_Celli_ 70_Lp	.cache\B7\{B7D296CE-D0C3-9957-C9DB-3F11A0113727}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Celli_ 70_Lp		1104835
+	191672266	On_A_Whim	.cache\74\{74EB5512-A554-8A8D-5CB3-4117DF4E0BD5}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\On_A_Whim		1308542
+	233374379	Mus_Level1_Explore_Ghost_Vibe_ 70_Lp	.cache\B7\{B78CD0C7-19BD-CAB8-9673-40A89E336BE5}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Ghost_Vibe_ 70_Lp		933459
+	403077359	Mus_Level1_Explore_Chiptune_ 70_Lp	.cache\E2\{E2CFF557-5C6F-1EE9-8652-0FB60360DD1F}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Chiptune_ 70_Lp		767059
+	579776136	Mus_Level1_Explore_Lulluby_ 70_Lp	.cache\F1\{F1E4DE66-CCFC-7806-5612-D19A0E3FB03C}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Lulluby_ 70_Lp		1239126
+	636397867	New Random Music Track_01	.cache\25\{25733E4D-BD7C-0ED3-160C-DFB762936A07}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\New Random Music Track_01		657314
+	799139141	Mus_Level1_Explore_Ticki_ 70_Lp	.cache\FB\{FB84EFEE-E090-4E6B-E8FD-0AA8FB6F6084}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Ticki_ 70_Lp		1146301
+	869195499	Mus_Level1_Explore_Violin_ 70_Lp	.cache\65\{65755E3C-493B-3A16-D78D-FB53E3867669}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Violin_ 70_Lp		903169
+	973382843	Mus_Level1_Explore_Bowl_ 70_Lp	.cache\D3\{D37C7F45-65EA-A4D6-8F58-75C9220F2CE2}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Bowl_ 70_Lp		899506
+	1001806393	Mus_Level1_Explore_Bass_ 70_Lp	.cache\82\{82A70157-12AA-D4C5-F834-D2859434796E}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Bass_ 70_Lp		1034732
+	1040865389	Wizard_Tower_Theme	.cache\AA\{AA6FA1BB-B8A0-21D8-F9EE-60AA7428F651}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Wizard_Tower_Theme		1663855
 
