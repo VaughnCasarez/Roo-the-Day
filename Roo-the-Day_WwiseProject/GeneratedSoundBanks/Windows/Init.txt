@@ -1,11 +1,29 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	444815956	PlayerLife			\Default Work Unit\PlayerLife	
+	762757699	Gameplay_State			\Default Work Unit\Gameplay_State	
+	3826569560	Music_State			\Default Work Unit\Music_State	
+
+State	ID	Name	State Group			Notes
+	655265632	Alive	PlayerLife			
+	748895195	None	PlayerLife			
+	2791675679	Defeated	PlayerLife			
+	579523862	Explore	Gameplay_State			
+	748895195	None	Gameplay_State			
+	1737926756	Tower	Gameplay_State			
+	89505537	Gameplay	Music_State			
+	748895195	None	Music_State			
+	1560169506	Boss	Music_State			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
-	3991942870	Music			\Default Work Unit\Music	
+	2804736953	Passthrough			\Default Work Unit\Main Audio Bus\Passthrough	
+	3991942870	Music			\Default Work Unit\Main Audio Bus\Passthrough\Music	
 
 Effect plug-ins	ID	Name	Type				Notes
-	314234304	Parametric EQ (Custom)	Wwise Parametric EQ			
+	39489390	Parametric EQ (Custom)	Wwise Parametric EQ			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
+	3576015694	Meta_XR_Audio_Sink	Meta XR Audio Sink			
 	3859886410	System	System			
 
