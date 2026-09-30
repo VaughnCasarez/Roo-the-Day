@@ -131,7 +131,7 @@ MonoBehaviour:
     m_MaximumHardwareTimeoutMs: 1000
     m_DebugOutOfRangeCheckEnabled: 0
     m_DebugOutOfRangeLimit: 16
-    m_SuspendAudioDuringFocusLoss: 1
+    m_SuspendAudioDuringFocusLoss: 0
     m_RenderDuringFocusLoss: 0
     m_SoundBankPersistentDataPath: 
     m_UseSubFoldersForGeneratedFiles: 0
