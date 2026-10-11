@@ -11,6 +11,13 @@
     "StaticLib": "AkParametricEQFX"
    },
    {
+    "LibName": "Meta XR Audio Sink",
+    "LibId": "9703591",
+    "Type": "AudioDevice",
+    "DLL": "MetaXRAudioWwise",
+    "StaticLib": "MetaXRAudioWwiseSink"
+   },
+   {
     "LibName": "System",
     "LibId": "11403271",
     "Type": "AudioDevice"
@@ -21,6 +28,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{4540006E-4769-BE0F-F83C-930058A4E6FA}"
+  "FileHash": "{F3112441-88B5-5440-9140-A5686BE569DA}"
  }
 }

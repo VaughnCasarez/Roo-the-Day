@@ -2,8 +2,9 @@
 <PluginInfo Platform="Windows" BasePlatform="Windows">
 	<PluginLibs>
 		<PluginLib LibName="Wwise Parametric EQ" LibId="6881283" Type="Effect" DLL="AkParametricEQ" StaticLib="AkParametricEQFX"/>
+		<PluginLib LibName="Meta XR Audio Sink" LibId="9703591" Type="AudioDevice" DLL="MetaXRAudioWwise" StaticLib="MetaXRAudioWwiseSink"/>
 		<PluginLib LibName="System" LibId="11403271" Type="AudioDevice"/>
 		<PluginLib LibName="No Output" LibId="11862023" Type="AudioDevice"/>
 	</PluginLibs>
-	<FileHash>{8655D358-E1E6-3394-3DF2-330BBE9C7F1E}</FileHash>
+	<FileHash>{5FD4D9F8-D763-47C0-CAA7-F2D2D5770990}</FileHash>
 </PluginInfo>

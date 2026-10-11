@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="16" SoundBankVersion="172">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{4F381490-220D-34AB-37F3-AD6D86416772}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{B310F2E6-B777-22AC-3B63-20CAE895C231}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
-					<Plugin Id="314234304" Name="Parametric EQ (Custom)" ObjectPath="\Busses\Default Work Unit\Music\[Effect Slot [0]: (Parametric EQ)]\Parametric EQ (Custom)" GUID="{032A9C1B-75C8-404D-9132-B9A16F10A6B1}" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="39489390" Name="Parametric EQ (Custom)" ObjectPath="\Busses\Default Work Unit\Main Audio Bus\Passthrough\Music\[Effect Slot [0]: (Parametric EQ)]\Parametric EQ (Custom)" GUID="{8F9569F4-A3C2-41F9-8B91-A0A1760085EF}" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</Custom>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Devices\Default Work Unit\No_Output" GUID="{1C29A3DC-BFFA-4C51-B258-B512C4D4D0B5}" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3576015694" Name="Meta_XR_Audio_Sink" ObjectPath="\Devices\Default Work Unit\Meta_XR_Audio_Sink" GUID="{67F229E4-505E-4FCF-B234-FA5F99252D38}" LibName="Meta XR Audio Sink" LibId="9703591"/>
 					<Plugin Id="3859886410" Name="System" ObjectPath="\Devices\Default Work Unit\System" GUID="{D67CFAFF-DC54-4E45-B776-25FCB062DA8E}" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
 				<Bus Id="2246998526" Name="Main Audio Bus" ObjectPath="\Busses\Default Work Unit\Main Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
-				<Bus Id="3991942870" Name="Music" ObjectPath="\Busses\Default Work Unit\Music" GUID="{695EE0D3-6E1F-441A-87A9-BF489D05F507}">
+				<Bus Id="2804736953" Name="Passthrough" ObjectPath="\Busses\Default Work Unit\Main Audio Bus\Passthrough" GUID="{D626B1B6-EA41-47A2-BAE6-D6135B91D951}"/>
+				<Bus Id="3991942870" Name="Music" ObjectPath="\Busses\Default Work Unit\Main Audio Bus\Passthrough\Music" GUID="{8BCC3DD3-B793-421F-A763-D70A695F3DAA}">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="314234304"/>
+							<PluginRef Id="39489390"/>
 						</Custom>
 					</PluginRefs>
 				</Bus>
@@ -32,10 +34,34 @@
 				<GameParameter Id="3002758120" Name="SS_Air_Freefall" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_Freefall" GUID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
 				<GameParameter Id="3074696722" Name="SS_Air_Size" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_Size" GUID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
 				<GameParameter Id="3203397129" Name="SS_Air_TimeOfDay" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_TimeOfDay" GUID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+				<GameParameter Id="3677180323" Name="Health" ObjectPath="\Game Parameters\Default Work Unit\Health" GUID="{2F878F5D-A090-4AC9-A778-CEF1E8DA7609}"/>
 				<GameParameter Id="3715662592" Name="SS_Air_Storm" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_Storm" GUID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
 				<GameParameter Id="3847924954" Name="SS_Air_Presence" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_Presence" GUID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
 				<GameParameter Id="4160247818" Name="SS_Air_Turbulence" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_Turbulence" GUID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="444815956" Name="PlayerLife" ObjectPath="\States\Default Work Unit\PlayerLife" GUID="{436DF7A7-FB2C-4A63-8631-C7BD52B4130B}">
+					<States>
+						<State Id="655265632" Name="Alive" ObjectPath="\States\Default Work Unit\PlayerLife\Alive" GUID="{5FAC6430-65D5-43B3-BF0C-ED8A3B268BCD}"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerLife\None" GUID="{23CD355D-8214-4363-9E1A-EDB3901E8058}"/>
+						<State Id="2791675679" Name="Defeated" ObjectPath="\States\Default Work Unit\PlayerLife\Defeated" GUID="{B7C8B7A4-42BA-413D-904E-2BDDC17947D0}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="762757699" Name="Gameplay_State" ObjectPath="\States\Default Work Unit\Gameplay_State" GUID="{568F1118-F348-45B2-89AC-9DD037660E50}">
+					<States>
+						<State Id="579523862" Name="Explore" ObjectPath="\States\Default Work Unit\Gameplay_State\Explore" GUID="{F9C492F4-1CBD-41D5-A750-E9E4624EBE5A}"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Gameplay_State\None" GUID="{466EADE2-AD39-4AC4-A5FC-994D2985B55D}"/>
+						<State Id="1737926756" Name="Tower" ObjectPath="\States\Default Work Unit\Gameplay_State\Tower" GUID="{FE034ED3-AB8F-442F-BEFD-5D9006365D42}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3826569560" Name="Music_State" ObjectPath="\States\Default Work Unit\Music_State" GUID="{AC5F1236-247C-4852-A9C5-D8EE836A928F}">
+					<States>
+						<State Id="89505537" Name="Gameplay" ObjectPath="\States\Default Work Unit\Music_State\Gameplay" GUID="{48BA6CEB-0356-4468-AD38-3ABAF9A7DD0B}"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music_State\None" GUID="{B6C73C3E-BA27-45BE-85AD-12EA24036CBB}"/>
+						<State Id="1560169506" Name="Boss" ObjectPath="\States\Default Work Unit\Music_State\Boss" GUID="{5E436AB3-DBF1-4886-8796-80EF4850AF72}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<AcousticTextures>
 				<AcousticTexture Id="504532776" Name="Brick" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Brick" GUID="{B086A5A9-F204-4C53-A838-BDB18B18F6D6}" Color="8">
 					<Properties>
@@ -166,5 +192,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{60E125AE-BAE7-FA4D-4342-86D248357080}</FileHash>
+	<FileHash>{6D29262F-5035-3EEA-BA02-CC064CE2E7AC}</FileHash>
 </SoundBanksInfo>
