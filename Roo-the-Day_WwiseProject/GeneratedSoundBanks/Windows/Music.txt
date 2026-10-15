@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1312517904	Wizard_Tower_Theme			\Music\Wizard_Tower_Theme	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1040865389	Wizard_Tower_Theme	.cache\40\{407F5631-E118-89BF-2180-C966AAFD4972}.wem		\Containers\Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Wizard_Tower_Theme		21470776
+

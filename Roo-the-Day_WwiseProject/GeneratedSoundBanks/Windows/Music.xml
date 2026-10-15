@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="172">
+	<SoundBanks>
+		<SoundBank Id="3991942870" Type="User" GUID="{EFAB609C-625A-4BC3-AB8B-B69A5F6F33D2}" Language="SFX" Hash="{CA75AA64-AB56-9E9A-A501-3AF082A61F59}">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<Media>
+				<File Id="1040865389" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wizard_Tower_Theme.wav</ShortName>
+					<CachePath>40/{407F5631-E118-89BF-2180-C966AAFD4972}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1312517904" Name="Wizard_Tower_Theme" ObjectPath="\Events\Music\Wizard_Tower_Theme" GUID="{A2F356FF-221B-45EE-A1C2-61A639A29F2E}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1040865389"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{C351DDDC-F9BE-9D01-F043-9B891ECD0D89}</FileHash>
+</SoundBanksInfo>
