@@ -2005,11 +2005,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1139242285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54000824ec131f54a9d553ab7ea8a3d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d380e837d804cd458617988fa0e44af, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Teleport
-  m_linkedPortal: {fileID: 0}
-  m_teleporterCamera: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::TeleporterV1
+  destination: {fileID: 1661562137}
+  linkedPortal: {fileID: 1227327437}
 --- !u!1 &1227327431
 GameObject:
   m_ObjectHideFlags: 0
@@ -2022,7 +2022,7 @@ GameObject:
   - component: {fileID: 1227327435}
   - component: {fileID: 1227327434}
   - component: {fileID: 1227327433}
-  - component: {fileID: 1227327432}
+  - component: {fileID: 1227327437}
   m_Layer: 0
   m_Name: Teleport_B
   m_TagString: Untagged
@@ -2030,20 +2030,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1227327432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227327431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54000824ec131f54a9d553ab7ea8a3d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Teleport
-  m_linkedPortal: {fileID: 0}
-  m_teleporterCamera: {fileID: 0}
 --- !u!65 &1227327433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2138,6 +2124,20 @@ Transform:
   - {fileID: 298299967}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+--- !u!114 &1227327437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227327431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d380e837d804cd458617988fa0e44af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TeleporterV1
+  destination: {fileID: 298299967}
+  linkedPortal: {fileID: 1139242290}
 --- !u!1 &1249617917
 GameObject:
   m_ObjectHideFlags: 0
