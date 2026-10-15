@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Platform="Android" BasePlatform="Android">
 	<PluginLibs>
-		<PluginLib LibName="Wwise Parametric EQ" LibId="6881283" Type="Effect" DLL="AkParametricEQ" StaticLib="AkParametricEQFX"/>
 		<PluginLib LibName="Meta XR Audio Sink" LibId="9703591" Type="AudioDevice" DLL="MetaXRAudioWwise" StaticLib="MetaXRAudioWwiseSink"/>
 		<PluginLib LibName="System" LibId="11403271" Type="AudioDevice"/>
 		<PluginLib LibName="No Output" LibId="11862023" Type="AudioDevice"/>
 	</PluginLibs>
-	<FileHash>{16851AB1-447D-A392-22FE-62308E913692}</FileHash>
+	<FileHash>{81D21CA1-2EF0-8875-AF89-FBD38D4ABDCD}</FileHash>
 </PluginInfo>

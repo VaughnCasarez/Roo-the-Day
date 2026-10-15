@@ -169,3 +169,9 @@ Packages/packages-lock.json linguist-generated
 
 # Exceptions for .asset files such as lightning pre-baking
 LightingData.asset     binary
+
+# Generated Wwise files must be selected as a complete generation alongside
+# their .bnk files. Text merges can corrupt JSON and crash the native database.
+Roo-the-Day_WwiseProject/GeneratedSoundBanks/** -merge
+Roo-the-Day_WwiseProject/SoundBanks/ProjectInfo.* -merge
+Roo-the-Day_WwiseProject/SoundBanks/Wwise_IDs.h -merge

@@ -1,6 +1,7 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	444815956	PlayerLife			\Default Work Unit\PlayerLife	
 	762757699	Gameplay_State			\Default Work Unit\Gameplay_State	
+	3092587493	Pause			\Default Work Unit\Pause	
 	3826569560	Music_State			\Default Work Unit\Music_State	
 
 State	ID	Name	State Group			Notes
@@ -10,17 +11,22 @@ State	ID	Name	State Group			Notes
 	579523862	Explore	Gameplay_State			
 	748895195	None	Gameplay_State			
 	1737926756	Tower	Gameplay_State			
+	2764240573	Combat	Gameplay_State			
+	3287291078	Alchemy_Lab	Gameplay_State			
+	3442564137	Astronomy_Lab	Gameplay_State			
+	4052664216	Fragmented_Tower	Gameplay_State			
+	748895195	None	Pause			
+	3092587493	Pause	Pause			
+	3405713266	Continue	Pause			
 	89505537	Gameplay	Music_State			
 	748895195	None	Music_State			
 	1560169506	Boss	Music_State			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
-	2804736953	Passthrough			\Default Work Unit\Main Audio Bus\Passthrough	
-	3991942870	Music			\Default Work Unit\Main Audio Bus\Passthrough\Music	
-
-Effect plug-ins	ID	Name	Type				Notes
-	39489390	Parametric EQ (Custom)	Wwise Parametric EQ			
+	393239870	SFX			\Default Work Unit\Master_Bus\SFX	
+	3677413232	Master_Bus			\Default Work Unit\Master_Bus	
+	3991942870	Music			\Default Work Unit\Master_Bus\Music	
+	4082164088	No_Use			\Default Work Unit\No_Use	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

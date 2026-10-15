@@ -4,13 +4,6 @@
   "BasePlatform": "Android",
   "PluginLibs": [
    {
-    "LibName": "Wwise Parametric EQ",
-    "LibId": "6881283",
-    "Type": "Effect",
-    "DLL": "AkParametricEQ",
-    "StaticLib": "AkParametricEQFX"
-   },
-   {
     "LibName": "Meta XR Audio Sink",
     "LibId": "9703591",
     "Type": "AudioDevice",
@@ -28,6 +21,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{F3112441-88B5-5440-9140-A5686BE569DA}"
+  "FileHash": "{438462F2-5FAA-85F7-BDA3-0E9E6589DF27}"
  }
 }

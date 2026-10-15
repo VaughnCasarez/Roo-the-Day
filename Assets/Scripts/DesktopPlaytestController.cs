@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XR;
 using UnityEngine.XR;
+using UnityEngine.XR.Management;
 using UnityEngine.XR.Interaction.Toolkit.Locomotion;
 
 [RequireComponent(typeof(CharacterController), typeof(XROrigin))]
@@ -41,7 +42,7 @@ public class DesktopPlaytestController : MonoBehaviour
 
     private void Update()
     {
-        bool useDesktop = !Application.isMobilePlatform && !XRSettings.isDeviceActive;
+        bool useDesktop = !Application.isMobilePlatform && !HasXRControl();
         if (useDesktop != desktopActive)
         {
             if (useDesktop)
@@ -91,6 +92,24 @@ public class DesktopPlaytestController : MonoBehaviour
         CollisionFlags collisions = character.Move(velocity * Time.deltaTime);
         if ((collisions & CollisionFlags.Above) != 0 && verticalSpeed > 0f)
             verticalSpeed = 0f;
+    }
+
+    private static bool HasXRControl()
+    {
+        // Keep XR in control during runtime startup and temporary loss of focus.
+        // isDeviceActive alone can be false while the simulator owns the camera.
+        var settings = XRGeneralSettings.Instance;
+        if (XRSettings.isDeviceActive ||
+            (settings != null && settings.Manager != null && settings.Manager.activeLoader != null))
+            return true;
+
+        // XRI's input simulator creates an HMD without loading an XR runtime.
+        foreach (var device in InputSystem.devices)
+        {
+            if (device is XRHMD && device.enabled)
+                return true;
+        }
+        return false;
     }
 
     private void BeginDesktop()

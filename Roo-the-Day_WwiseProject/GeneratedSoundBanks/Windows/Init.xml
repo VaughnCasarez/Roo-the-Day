@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="172">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{142B2496-FDD8-852D-54B3-B05B87694909}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{29AEBF1C-5A0F-C73C-7855-293C6D2CD96D}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
-				<Custom>
-					<Plugin Id="39489390" Name="Parametric EQ (Custom)" ObjectPath="\Busses\Default Work Unit\Main Audio Bus\Passthrough\Music\[Effect Slot [0]: (Parametric EQ)]\Parametric EQ (Custom)" GUID="{8F9569F4-A3C2-41F9-8B91-A0A1760085EF}" LibName="Wwise Parametric EQ" LibId="6881283"/>
-				</Custom>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Devices\Default Work Unit\No_Output" GUID="{1C29A3DC-BFFA-4C51-B258-B512C4D4D0B5}" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3576015694" Name="Meta_XR_Audio_Sink" ObjectPath="\Devices\Default Work Unit\Meta_XR_Audio_Sink" GUID="{67F229E4-505E-4FCF-B234-FA5F99252D38}" LibName="Meta XR Audio Sink" LibId="9703591"/>
@@ -16,15 +13,10 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
-				<Bus Id="2246998526" Name="Main Audio Bus" ObjectPath="\Busses\Default Work Unit\Main Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
-				<Bus Id="2804736953" Name="Passthrough" ObjectPath="\Busses\Default Work Unit\Main Audio Bus\Passthrough" GUID="{D626B1B6-EA41-47A2-BAE6-D6135B91D951}"/>
-				<Bus Id="3991942870" Name="Music" ObjectPath="\Busses\Default Work Unit\Main Audio Bus\Passthrough\Music" GUID="{8BCC3DD3-B793-421F-A763-D70A695F3DAA}">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="39489390"/>
-						</Custom>
-					</PluginRefs>
-				</Bus>
+				<Bus Id="393239870" Name="SFX" ObjectPath="\Busses\Default Work Unit\Master_Bus\SFX" GUID="{D948A898-7581-4A77-8A62-EAE482E55D76}"/>
+				<Bus Id="3677413232" Name="Master_Bus" ObjectPath="\Busses\Default Work Unit\Master_Bus" GUID="{53B0EA47-03CF-47E5-AC6D-48F73B0F8C70}"/>
+				<Bus Id="3991942870" Name="Music" ObjectPath="\Busses\Default Work Unit\Master_Bus\Music" GUID="{B5C7E713-41B1-4950-8C90-619852906094}"/>
+				<Bus Id="4082164088" Name="No_Use" ObjectPath="\Busses\Default Work Unit\No_Use" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 			</Busses>
 			<GameParameters>
 				<GameParameter Id="822163944" Name="SS_Air_RPM" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_RPM" GUID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
@@ -52,6 +44,17 @@
 						<State Id="579523862" Name="Explore" ObjectPath="\States\Default Work Unit\Gameplay_State\Explore" GUID="{F9C492F4-1CBD-41D5-A750-E9E4624EBE5A}"/>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Gameplay_State\None" GUID="{466EADE2-AD39-4AC4-A5FC-994D2985B55D}"/>
 						<State Id="1737926756" Name="Tower" ObjectPath="\States\Default Work Unit\Gameplay_State\Tower" GUID="{FE034ED3-AB8F-442F-BEFD-5D9006365D42}"/>
+						<State Id="2764240573" Name="Combat" ObjectPath="\States\Default Work Unit\Gameplay_State\Combat" GUID="{11C64F0D-A8B7-4DE5-81E9-B644DAE99849}"/>
+						<State Id="3287291078" Name="Alchemy_Lab" ObjectPath="\States\Default Work Unit\Gameplay_State\Alchemy_Lab" GUID="{864A19E5-FD37-456D-81AE-1EDEF893B2C0}"/>
+						<State Id="3442564137" Name="Astronomy_Lab" ObjectPath="\States\Default Work Unit\Gameplay_State\Astronomy_Lab" GUID="{CE46A347-2748-4844-BAC2-D2B0E6E00B49}"/>
+						<State Id="4052664216" Name="Fragmented_Tower" ObjectPath="\States\Default Work Unit\Gameplay_State\Fragmented_Tower" GUID="{BA708AF9-1A62-49E5-A006-44C54B803D74}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3092587493" Name="Pause" ObjectPath="\States\Default Work Unit\Pause" GUID="{CD719B0F-DCF4-4B3E-BFF5-958D67F95033}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Pause\None" GUID="{53CFD744-25B9-422E-A82C-EE83C5DCDC3B}"/>
+						<State Id="3092587493" Name="Pause" ObjectPath="\States\Default Work Unit\Pause\Pause" GUID="{C560B961-1F91-44F7-8840-56C0AE01C6C4}"/>
+						<State Id="3405713266" Name="Continue" ObjectPath="\States\Default Work Unit\Pause\Continue" GUID="{698F04C1-2547-4E84-A863-CBCE9C723AB0}"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="3826569560" Name="Music_State" ObjectPath="\States\Default Work Unit\Music_State" GUID="{AC5F1236-247C-4852-A9C5-D8EE836A928F}">
@@ -62,6 +65,14 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="2143838950" Name="FootSteps_SFX" ObjectPath="\Switches\Default Work Unit\FootSteps_SFX" GUID="{146648BC-0D8B-4B75-9E85-F713E7699042}">
+					<Switches>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\FootSteps_SFX\Stone" GUID="{F369076E-BC51-4C0C-9A51-85E05EEB6637}"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\FootSteps_SFX\Wood" GUID="{79BD1526-F00A-445C-AA21-762A1DD240E6}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 			<AcousticTextures>
 				<AcousticTexture Id="504532776" Name="Brick" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Brick" GUID="{B086A5A9-F204-4C53-A838-BDB18B18F6D6}" Color="8">
 					<Properties>
@@ -192,5 +203,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{06D4CFF4-7E6C-920A-5B90-302CF8CA0FBA}</FileHash>
+	<FileHash>{EA03758F-B776-465B-8ACD-922D10161CA6}</FileHash>
 </SoundBanksInfo>

@@ -1,0 +1,23 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2143838950	Footsteps_SFX			\SFX\Footsteps_SFX	
+	3594558967	Obj_Pickup_SFX			\SFX\Obj_Pickup_SFX	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2143838950	FootSteps_SFX			\Default Work Unit\FootSteps_SFX	
+
+Switch	ID	Name	Switch Group			Notes
+	1216965916	Stone	FootSteps_SFX			
+	2058049674	Wood	FootSteps_SFX			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	44296163	plr_footstep_wood_01	.cache\F2\{F2D13F5B-BDA1-878B-A0F1-659BE675B6AE}.wem		\Containers\SFX\FootSteps_SFX\FootStep_Wood_SFX\Footstop_Wood_SFX\plr_footstep_wood_01		4239
+	123136249	plr_footstep_stone_03	.cache\A8\{A87B889D-50CF-32CE-AC38-4972107E70DB}.wem		\Containers\SFX\FootSteps_SFX\FoorStep_Stone_SFX\Footstep_Stone_SFX\plr_footstep_stone_03		4069
+	165649646	plr_footstep_wood_05	.cache\AE\{AE9E64EF-46CC-1B8E-6660-50E60FD1A5F9}.wem		\Containers\SFX\FootSteps_SFX\FootStep_Wood_SFX\Footstop_Wood_SFX\plr_footstep_wood_05		4200
+	171118137	plr_footstep_wood_02	.cache\63\{63D50D65-9E89-E19B-89C2-50D50FB60D8B}.wem		\Containers\SFX\FootSteps_SFX\FootStep_Wood_SFX\Footstop_Wood_SFX\plr_footstep_wood_02		4176
+	193669521	plr_footstep_wood_04	.cache\1F\{1F614C14-3025-179A-163C-1C8A855F71A6}.wem		\Containers\SFX\FootSteps_SFX\FootStep_Wood_SFX\Footstop_Wood_SFX\plr_footstep_wood_04		3870
+	284000489	plr_footstep_stone_01	.cache\99\{99B62EBD-7664-773E-8CE8-B53C3DE1D180}.wem		\Containers\SFX\FootSteps_SFX\FoorStep_Stone_SFX\Footstep_Stone_SFX\plr_footstep_stone_01		4231
+	374801522	plr_footstep_stone_04	.cache\B0\{B0E7FB56-0A8A-0076-CDED-42BD03E75D48}.wem		\Containers\SFX\FootSteps_SFX\FoorStep_Stone_SFX\Footstep_Stone_SFX\plr_footstep_stone_04		3913
+	665730043	plr_footstep_stone_05	.cache\51\{51339C13-F41E-8680-F677-ACA03DD74141}.wem		\Containers\SFX\FootSteps_SFX\FoorStep_Stone_SFX\Footstep_Stone_SFX\plr_footstep_stone_05		5312
+	724956346	plr_footstep_stone_02	.cache\F9\{F9C3920A-1BC1-F497-F004-87A7B5E31C46}.wem		\Containers\SFX\FootSteps_SFX\FoorStep_Stone_SFX\Footstep_Stone_SFX\plr_footstep_stone_02		4353
+	918920416	plr_footstep_wood_03	.cache\01\{01E5D471-02FC-AC8A-F0D3-184CD92E69BA}.wem		\Containers\SFX\FootSteps_SFX\FootStep_Wood_SFX\Footstop_Wood_SFX\plr_footstep_wood_03		3960
+

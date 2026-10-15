@@ -10,11 +10,27 @@
     "Type": "User",
     "GUID": "{EFAB609C-625A-4BC3-AB8B-B69A5F6F33D2}",
     "Language": "SFX",
-    "Hash": "{0A49C533-F0D0-5880-C80E-305D740C3E2E}",
+    "Hash": "{834B70F6-94B1-0B51-3F6C-B570D7CF71FF}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
     "ShortName": "Music",
     "Path": "Music.bnk",
     "Media": [
+     {
+      "Id": "18138315",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_Xiyo_90bpm_Lp.wav",
+      "CachePath": "57/{57D9B2F5-D4FF-FA89-7C0A-E74FD2E38FCB}.wem"
+     },
+     {
+      "Id": "35039837",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_Clarinets_90bpm_Lp.wav",
+      "CachePath": "BD/{BD0CBB0E-996C-708E-9C29-BFE200E1DB35}.wem"
+     },
      {
       "Id": "84930074",
       "Language": "SFX",
@@ -22,6 +38,30 @@
       "Location": "Memory",
       "ShortName": "Vertical_Composition\\Mus_Level1_Explore_Darkside_ 70_Lp.wav",
       "CachePath": "3F/{3F13A42F-6A7B-A8A7-3635-3A6D9D462625}.wem"
+     },
+     {
+      "Id": "99163619",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fragmented_Tower_Theme\\Mus_Frag_Tower_GhostBells_80bpm_Lp.wav",
+      "CachePath": "D1/{D1BDF236-4ACC-6E49-C1C1-EAC3ACC94C17}.wem"
+     },
+     {
+      "Id": "103207521",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_Picolo_90bpm_Lp.wav",
+      "CachePath": "86/{86CC9ED0-727A-B764-2FFF-C35986F42C75}.wem"
+     },
+     {
+      "Id": "115873439",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Mus_Alch_Lab_Xylo_90bpm_Lp.wav",
+      "CachePath": "19/{194C99A8-962C-959C-61DC-4A87147A0425}.wem"
      },
      {
       "Id": "119559225",
@@ -32,12 +72,28 @@
       "CachePath": "92/{9263C557-A5C8-8ADD-950B-A2E5284E77C5}.wem"
      },
      {
+      "Id": "121305076",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_Xylo_1_151bpm .wav",
+      "CachePath": "81/{811F7506-BCF4-7F14-4122-1B32A0FEB98E}.wem"
+     },
+     {
       "Id": "158150885",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Vertical_Composition\\Mus_Level1_Explore_Celli_ 70_Lp.wav",
       "CachePath": "B7/{B7D296CE-D0C3-9957-C9DB-3F11A0113727}.wem"
+     },
+     {
+      "Id": "174476212",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Mus_Alch_Lab_Celli_90bpm_Lp.wav",
+      "CachePath": "46/{462B437E-DD09-A47F-530D-BF9E5508AEC3}.wem"
      },
      {
       "Id": "191672266",
@@ -48,6 +104,38 @@
       "CachePath": "74/{74EB5512-A554-8A8D-5CB3-4117DF4E0BD5}.wem"
      },
      {
+      "Id": "191878680",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_Obsolete_151bpm .wav",
+      "CachePath": "5B/{5BC84C36-4720-E42A-42BA-119D9A671EA3}.wem"
+     },
+     {
+      "Id": "193388933",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_Glock_90bpm_Lp.wav",
+      "CachePath": "EB/{EB06E2A7-746B-A30B-764D-D143EF194AF9}.wem"
+     },
+     {
+      "Id": "195054907",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Mus_Alch_Lab_Smol_Percs_90bpm_Lp.wav",
+      "CachePath": "1A/{1AABA217-3003-7A3A-A7D8-D8447C400BDE}.wem"
+     },
+     {
+      "Id": "207835494",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_Violins_90bpm_Lp.wav",
+      "CachePath": "76/{76E7FEDC-3D3B-F926-6877-22BC19573B86}.wem"
+     },
+     {
       "Id": "233374379",
       "Language": "SFX",
       "Streaming": "false",
@@ -56,12 +144,204 @@
       "CachePath": "B7/{B78CD0C7-19BD-CAB8-9673-40A89E336BE5}.wem"
      },
      {
+      "Id": "234500700",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_Marimba_151bpm .wav",
+      "CachePath": "32/{32485B20-0046-95E0-DD9B-7C280FE0849F}.wem"
+     },
+     {
+      "Id": "258657768",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_Small_Percs_Beat_151bpm .wav",
+      "CachePath": "C6/{C6D429B0-EA4E-8EFF-B32F-EE944C1D3648}.wem"
+     },
+     {
+      "Id": "328095955",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fragmented_Tower_Theme\\Mus_Frag_Tower_Fell_80bpm_Lp.wav",
+      "CachePath": "0C/{0C217974-B5BC-F23E-A0AB-75713CBEF1DC}.wem"
+     },
+     {
+      "Id": "342161498",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fragmented_Tower_Theme\\Mus_Frag_Tower_Harp_80bpm_Lp.wav",
+      "CachePath": "91/{91C29A65-ACF1-CDE3-E8E6-303709A2F49E}.wem"
+     },
+     {
+      "Id": "345749373",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_Violas_151bpm .wav",
+      "CachePath": "48/{4802A8F6-7CE3-27CC-2D12-9DFDBF0350FE}.wem"
+     },
+     {
+      "Id": "349891908",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_808_90bpm_Lp.wav",
+      "CachePath": "3F/{3F5953B6-FEBA-1526-6AA3-F8B51E895B39}.wem"
+     },
+     {
+      "Id": "361175457",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fragmented_Tower_Theme\\Mus_Frag_Tower_VIolas_80bpm_Lp.wav",
+      "CachePath": "DB/{DB7101B9-AC5C-168F-15FE-6A1E24AD54C9}.wem"
+     },
+     {
+      "Id": "367391956",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_Accordion_Beat_151bpm .wav",
+      "CachePath": "1B/{1B009273-1484-9D08-BE0E-9547B3E03DD8}.wem"
+     },
+     {
+      "Id": "381407010",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Mus_Alch_Lab_Mini_Punk_90bpm_Lp.wav",
+      "CachePath": "5D/{5D098BD8-A6EE-4E0E-FEC0-C65E6DEBC092}.wem"
+     },
+     {
+      "Id": "385496281",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Mus_Alch_Lab_Ghost_90bpm_Lp.wav",
+      "CachePath": "3F/{3F597BED-D507-972D-376E-8EEE2100A3F4}.wem"
+     },
+     {
       "Id": "403077359",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Vertical_Composition\\Mus_Level1_Explore_Chiptune_ 70_Lp.wav",
       "CachePath": "E2/{E2CFF557-5C6F-1EE9-8652-0FB60360DD1F}.wem"
+     },
+     {
+      "Id": "403704639",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Mus_Alch_Lab_String_Bass_90bpm_Lp.wav",
+      "CachePath": "0F/{0F62E2E7-4F1B-712C-2627-69161EDF65CB}.wem"
+     },
+     {
+      "Id": "412989388",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_String_Bass_151bpm .wav",
+      "CachePath": "E5/{E512350B-0E2C-1C69-E8CE-B0733ADAE8AA}.wem"
+     },
+     {
+      "Id": "414007034",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_Cassette_151bpm .wav",
+      "CachePath": "7E/{7EFE68E9-396E-BEE2-0B8B-E833158256A3}.wem"
+     },
+     {
+      "Id": "426463809",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Mus_Alch_Lab_Glock_90bpm_Lp.wav",
+      "CachePath": "47/{471BB0ED-5066-C49F-0E4A-5DDDBA421E78}.wem"
+     },
+     {
+      "Id": "433632481",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_Theramin_90bpm_Lp.wav",
+      "CachePath": "34/{34633BBE-54FB-E5D6-32BE-F30070362DAB}.wem"
+     },
+     {
+      "Id": "443138520",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fragmented_Tower_Theme\\Mus_Frag_Tower_Marimba_80bpm_Lp.wav",
+      "CachePath": "1E/{1E1BCDA9-4835-1862-E741-6A19F9534BAC}.wem"
+     },
+     {
+      "Id": "483607309",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_Cloudy_151bpm .wav",
+      "CachePath": "FA/{FA78D144-FBDE-6BB4-105C-7A3BF602D9BA}.wem"
+     },
+     {
+      "Id": "501383167",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Mus_Alch_Lab_Theramin_90bpm_Lp.wav",
+      "CachePath": "34/{3401F026-9E0A-041B-45DD-B8C065D672D9}.wem"
+     },
+     {
+      "Id": "517222400",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_Piano_151bpm .wav",
+      "CachePath": "8F/{8F4536C1-FBAF-AD90-7A36-AD8580C9DE30}.wem"
+     },
+     {
+      "Id": "532438646",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Mus_Alch_Lab_Cassette_Deck_90bpm_Lp.wav",
+      "CachePath": "B3/{B34A195B-08E6-6D86-41A4-839203D44916}.wem"
+     },
+     {
+      "Id": "538527679",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Intro_151bpm .wav",
+      "CachePath": "1A/{1ADB39A9-D142-2DEB-3050-B81DF7551885}.wem"
+     },
+     {
+      "Id": "564332111",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_Xylo_2_151bpm .wav",
+      "CachePath": "7B/{7BF3DD6D-CB23-3676-ACF7-6F50664786B8}.wem"
+     },
+     {
+      "Id": "566442691",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_Ocarina_90bpm_Lp.wav",
+      "CachePath": "BD/{BD439DC7-4711-61C1-9F92-F86AA875941F}.wem"
+     },
+     {
+      "Id": "568154116",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fragmented_Tower_Theme\\Mus_Frag_Tower_V2_80bpm_Lp.wav",
+      "CachePath": "57/{573416C3-9441-EB16-F130-5BE03C934433}.wem"
      },
      {
       "Id": "579776136",
@@ -80,12 +360,140 @@
       "CachePath": "25/{25733E4D-BD7C-0ED3-160C-DFB762936A07}.wem"
      },
      {
+      "Id": "665945349",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_Marimba_90bpm_Lp.wav",
+      "CachePath": "61/{6181AFED-4ADD-88BE-615B-276639FE39F6}.wem"
+     },
+     {
+      "Id": "672026521",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat.wav",
+      "CachePath": "EA/{EAFAADAA-CE8E-5622-799C-33862E26010B}.wem"
+     },
+     {
+      "Id": "672530646",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_Flutes_90bpm_Lp.wav",
+      "CachePath": "12/{129F7DF0-8C48-AAE1-D6EB-00E7FD394945}.wem"
+     },
+     {
+      "Id": "679998732",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Mus_Alch_Lab_V2_90bpm_Lp.wav",
+      "CachePath": "B0/{B0061FAD-BC2D-0C27-1B00-F922A6B8BE04}.wem"
+     },
+     {
+      "Id": "690102682",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_Ghost_90bpm_Lp.wav",
+      "CachePath": "09/{091116BE-740F-7EA6-FA43-7541D8A6A6C0}.wem"
+     },
+     {
+      "Id": "709117352",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Mus_Alch_Lab_Android_90bpm_Lp.wav",
+      "CachePath": "B8/{B8A4A297-5ED9-AA49-61A8-7E082C5B3B0E}.wem"
+     },
+     {
+      "Id": "731062129",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_V1_151bpm .wav",
+      "CachePath": "B9/{B93529EF-AC85-EC0A-12FA-C64F75A38531}.wem"
+     },
+     {
+      "Id": "775543714",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fragmented_Tower_Theme\\Mus_Frag_Tower_WindMachine_80bpm_Lp.wav",
+      "CachePath": "D3/{D30FBDF3-FBF1-2566-2077-CE82849A78CF}.wem"
+     },
+     {
+      "Id": "777864378",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_Celli_90bpm_Lp.wav",
+      "CachePath": "45/{452B46E3-C0E4-FAAC-48F2-6FEDFE8C4C04}.wem"
+     },
+     {
+      "Id": "790536303",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fragmented_Tower_Theme\\Mus_Frag_Tower_Celli2_80bpm_Lp.wav",
+      "CachePath": "48/{48A4D20A-440B-8C8B-9FAC-C00078540AD8}.wem"
+     },
+     {
+      "Id": "794555705",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_SmallPercussion_90bpm_Lp.wav",
+      "CachePath": "AC/{AC03C5B2-ED12-543F-809E-711D13C2610D}.wem"
+     },
+     {
       "Id": "799139141",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Vertical_Composition\\Mus_Level1_Explore_Ticki_ 70_Lp.wav",
       "CachePath": "FB/{FB84EFEE-E090-4E6B-E8FD-0AA8FB6F6084}.wem"
+     },
+     {
+      "Id": "802747012",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Mus_Alch_Lab_V1_90bpm_Lp.wav",
+      "CachePath": "71/{7140EF6E-0F87-A2A3-F340-791B522D191C}.wem"
+     },
+     {
+      "Id": "804490685",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_Chiptune_Beat_151bpm .wav",
+      "CachePath": "20/{2012D8A6-E4B4-C33D-2CEE-F4FA0D5D873A}.wem"
+     },
+     {
+      "Id": "832257286",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fragmented_Tower_Theme\\Mus_Frag_Tower_StringBass_80bpm_Lp.wav",
+      "CachePath": "87/{87A9ABB9-C942-F91E-7FA6-96EF3AD39668}.wem"
+     },
+     {
+      "Id": "855792249",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Mus_Alch_Lab_Violas_90bpm_Lp.wav",
+      "CachePath": "4A/{4A027981-1B18-8FB4-421F-DBE6D278B5C7}.wem"
+     },
+     {
+      "Id": "868072409",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fragmented_Tower_Theme\\Fragmented_Tower.wav",
+      "CachePath": "9A/{9A7514E5-5DDE-7DA4-F6EA-5C2F8827E869}.wem"
      },
      {
       "Id": "869195499",
@@ -96,12 +504,60 @@
       "CachePath": "65/{65755E3C-493B-3A16-D78D-FB53E3867669}.wem"
      },
      {
+      "Id": "875992795",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_Ghost_151bpm .wav",
+      "CachePath": "16/{16735371-0C42-760B-8872-9DF5B42F9FFE}.wem"
+     },
+     {
+      "Id": "902942149",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ghostly_Combat_Theme\\Ghostly_Combat_Celli_151bpm .wav",
+      "CachePath": "FE/{FE05B0F5-2893-24E7-080F-C4382261E4B2}.wem"
+     },
+     {
+      "Id": "910599650",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_BassDrum_90bpm_Lp.wav",
+      "CachePath": "2D/{2DBD0661-7E55-BFA6-E9D2-400D30FE9DFA}.wem"
+     },
+     {
+      "Id": "922472994",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fragmented_Tower_Theme\\Mus_Frag_Tower_Celli1_80bpm_Lp.wav",
+      "CachePath": "85/{85C6078C-F268-8BAE-8CD7-2C90AE3AF819}.wem"
+     },
+     {
+      "Id": "954627652",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fragmented_Tower_Theme\\Mus_Frag_Tower_V1_80bpm_Lp.wav",
+      "CachePath": "AA/{AAFC06B2-590A-3801-7136-7EFF6C42AF5A}.wem"
+     },
+     {
       "Id": "973382843",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Vertical_Composition\\Mus_Level1_Explore_Bowl_ 70_Lp.wav",
       "CachePath": "D3/{D37C7F45-65EA-A4D6-8F58-75C9220F2CE2}.wem"
+     },
+     {
+      "Id": "1000457029",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fragmented_Tower_Theme\\Mus_Frag_Tower_808_80bpm_Lp.wav",
+      "CachePath": "91/{913B29DD-6925-3A46-EFAB-A4CC47238C52}.wem"
      },
      {
       "Id": "1001806393",
@@ -112,12 +568,44 @@
       "CachePath": "82/{82A70157-12AA-D4C5-F834-D2859434796E}.wem"
      },
      {
+      "Id": "1031570488",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Alchemy_Lab_Theme.wav",
+      "CachePath": "03/{036024DB-1BF4-902B-F405-98D6252A6FF5}.wem"
+     },
+     {
       "Id": "1040865389",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Wizard_Tower_Theme.wav",
       "CachePath": "AA/{AA6FA1BB-B8A0-21D8-F9EE-60AA7428F651}.wem"
+     },
+     {
+      "Id": "1044015329",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fragmented_Tower_Theme\\Mus_Frag_Tower_SmolPercs_80bpm_Lp.wav",
+      "CachePath": "B1/{B17C77DA-2E1E-E5C9-6B3B-1E337D811709}.wem"
+     },
+     {
+      "Id": "1049641489",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wizard_Tower_Theme\\Mus_Tower_StringBass_90bpm_Lp.wav",
+      "CachePath": "CA/{CAA1871E-6F19-A464-AC22-CF8A43994617}.wem"
+     },
+     {
+      "Id": "1064318371",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Alchemy_Lab_Theme\\Mus_Alch_Lab_Nebulizer_90bpm_Lp.wav",
+      "CachePath": "66/{66DF468F-7E3B-D756-41E3-C5AFA111B785}.wem"
      }
     ],
     "Events": [
@@ -219,7 +707,299 @@
             },
             "MediaRefs": [
              {
+              "Id": "18138315"
+             },
+             {
+              "Id": "35039837"
+             },
+             {
+              "Id": "103207521"
+             },
+             {
+              "Id": "193388933"
+             },
+             {
+              "Id": "207835494"
+             },
+             {
+              "Id": "349891908"
+             },
+             {
+              "Id": "433632481"
+             },
+             {
+              "Id": "566442691"
+             },
+             {
+              "Id": "665945349"
+             },
+             {
+              "Id": "672530646"
+             },
+             {
+              "Id": "690102682"
+             },
+             {
+              "Id": "777864378"
+             },
+             {
+              "Id": "794555705"
+             },
+             {
+              "Id": "910599650"
+             },
+             {
               "Id": "1040865389"
+             },
+             {
+              "Id": "1049641489"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "444815956",
+         "Id": "655265632",
+         "GUID": "{5FAC6430-65D5-43B3-BF0C-ED8A3B268BCD}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "3826569560",
+           "Id": "89505537",
+           "GUID": "{48BA6CEB-0356-4468-AD38-3ABAF9A7DD0B}"
+          },
+          "Children": [
+           {
+            "SwitchValue": {
+             "GroupType": "State",
+             "GroupId": "762757699",
+             "Id": "3287291078",
+             "GUID": "{864A19E5-FD37-456D-81AE-1EDEF893B2C0}"
+            },
+            "MediaRefs": [
+             {
+              "Id": "115873439"
+             },
+             {
+              "Id": "174476212"
+             },
+             {
+              "Id": "195054907"
+             },
+             {
+              "Id": "381407010"
+             },
+             {
+              "Id": "385496281"
+             },
+             {
+              "Id": "403704639"
+             },
+             {
+              "Id": "426463809"
+             },
+             {
+              "Id": "501383167"
+             },
+             {
+              "Id": "532438646"
+             },
+             {
+              "Id": "679998732"
+             },
+             {
+              "Id": "709117352"
+             },
+             {
+              "Id": "802747012"
+             },
+             {
+              "Id": "855792249"
+             },
+             {
+              "Id": "1031570488"
+             },
+             {
+              "Id": "1064318371"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "444815956",
+         "Id": "655265632",
+         "GUID": "{5FAC6430-65D5-43B3-BF0C-ED8A3B268BCD}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "3826569560",
+           "Id": "89505537",
+           "GUID": "{48BA6CEB-0356-4468-AD38-3ABAF9A7DD0B}"
+          },
+          "Children": []
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "444815956",
+         "Id": "655265632",
+         "GUID": "{5FAC6430-65D5-43B3-BF0C-ED8A3B268BCD}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "3826569560",
+           "Id": "89505537",
+           "GUID": "{48BA6CEB-0356-4468-AD38-3ABAF9A7DD0B}"
+          },
+          "Children": [
+           {
+            "SwitchValue": {
+             "GroupType": "State",
+             "GroupId": "762757699",
+             "Id": "2764240573",
+             "GUID": "{11C64F0D-A8B7-4DE5-81E9-B644DAE99849}"
+            },
+            "MediaRefs": [
+             {
+              "Id": "121305076"
+             },
+             {
+              "Id": "191878680"
+             },
+             {
+              "Id": "234500700"
+             },
+             {
+              "Id": "258657768"
+             },
+             {
+              "Id": "345749373"
+             },
+             {
+              "Id": "367391956"
+             },
+             {
+              "Id": "412989388"
+             },
+             {
+              "Id": "414007034"
+             },
+             {
+              "Id": "483607309"
+             },
+             {
+              "Id": "517222400"
+             },
+             {
+              "Id": "538527679"
+             },
+             {
+              "Id": "564332111"
+             },
+             {
+              "Id": "672026521"
+             },
+             {
+              "Id": "731062129"
+             },
+             {
+              "Id": "804490685"
+             },
+             {
+              "Id": "875992795"
+             },
+             {
+              "Id": "902942149"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "444815956",
+         "Id": "655265632",
+         "GUID": "{5FAC6430-65D5-43B3-BF0C-ED8A3B268BCD}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "3826569560",
+           "Id": "89505537",
+           "GUID": "{48BA6CEB-0356-4468-AD38-3ABAF9A7DD0B}"
+          },
+          "Children": [
+           {
+            "SwitchValue": {
+             "GroupType": "State",
+             "GroupId": "762757699",
+             "Id": "4052664216",
+             "GUID": "{BA708AF9-1A62-49E5-A006-44C54B803D74}"
+            },
+            "MediaRefs": [
+             {
+              "Id": "99163619"
+             },
+             {
+              "Id": "328095955"
+             },
+             {
+              "Id": "342161498"
+             },
+             {
+              "Id": "361175457"
+             },
+             {
+              "Id": "443138520"
+             },
+             {
+              "Id": "568154116"
+             },
+             {
+              "Id": "775543714"
+             },
+             {
+              "Id": "790536303"
+             },
+             {
+              "Id": "832257286"
+             },
+             {
+              "Id": "868072409"
+             },
+             {
+              "Id": "922472994"
+             },
+             {
+              "Id": "954627652"
+             },
+             {
+              "Id": "1000457029"
+             },
+             {
+              "Id": "1044015329"
              }
             ]
            }
@@ -290,6 +1070,30 @@
         "Name": "Tower",
         "ObjectPath": "\\States\\Default Work Unit\\Gameplay_State\\Tower",
         "GUID": "{FE034ED3-AB8F-442F-BEFD-5D9006365D42}"
+       },
+       {
+        "Id": "2764240573",
+        "Name": "Combat",
+        "ObjectPath": "\\States\\Default Work Unit\\Gameplay_State\\Combat",
+        "GUID": "{11C64F0D-A8B7-4DE5-81E9-B644DAE99849}"
+       },
+       {
+        "Id": "3287291078",
+        "Name": "Alchemy_Lab",
+        "ObjectPath": "\\States\\Default Work Unit\\Gameplay_State\\Alchemy_Lab",
+        "GUID": "{864A19E5-FD37-456D-81AE-1EDEF893B2C0}"
+       },
+       {
+        "Id": "3442564137",
+        "Name": "Astronomy_Lab",
+        "ObjectPath": "\\States\\Default Work Unit\\Gameplay_State\\Astronomy_Lab",
+        "GUID": "{CE46A347-2748-4844-BAC2-D2B0E6E00B49}"
+       },
+       {
+        "Id": "4052664216",
+        "Name": "Fragmented_Tower",
+        "ObjectPath": "\\States\\Default Work Unit\\Gameplay_State\\Fragmented_Tower",
+        "GUID": "{BA708AF9-1A62-49E5-A006-44C54B803D74}"
        }
       ]
      },
@@ -322,6 +1126,6 @@
     ]
    }
   ],
-  "FileHash": "{F70E8F95-2C77-ED35-2EFA-8E965F9DBBB7}"
+  "FileHash": "{5175E49B-A1B8-286D-0A0F-661CD301216A}"
  }
 }

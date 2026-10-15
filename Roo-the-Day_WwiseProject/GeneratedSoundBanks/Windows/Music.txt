@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 State Group	ID	Name			Wwise Object Path	Notes
 	444815956	PlayerLife			\Default Work Unit\PlayerLife	
 	762757699	Gameplay_State			\Default Work Unit\Gameplay_State	
+	3092587493	Pause			\Default Work Unit\Pause	
 	3826569560	Music_State			\Default Work Unit\Music_State	
 
 State	ID	Name	State Group			Notes
@@ -14,22 +15,90 @@ State	ID	Name	State Group			Notes
 	579523862	Explore	Gameplay_State			
 	748895195	None	Gameplay_State			
 	1737926756	Tower	Gameplay_State			
+	2764240573	Combat	Gameplay_State			
+	3287291078	Alchemy_Lab	Gameplay_State			
+	3442564137	Astronomy_Lab	Gameplay_State			
+	4052664216	Fragmented_Tower	Gameplay_State			
+	748895195	None	Pause			
+	3092587493	Pause	Pause			
+	3405713266	Continue	Pause			
 	89505537	Gameplay	Music_State			
 	748895195	None	Music_State			
 	1560169506	Boss	Music_State			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	18138315	Mus_Tower_Xiyo_90bpm_Lp_01	.cache\57\{57D9B2F5-D4FF-FA89-7C0A-E74FD2E38FCB}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_Xiyo_90bpm_Lp_01		1379073
+	35039837	Mus_Tower_Clarinets_90bpm_Lp_01	.cache\BD\{BD0CBB0E-996C-708E-9C29-BFE200E1DB35}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_Clarinets_90bpm_Lp_01		641894
 	84930074	Mus_Level1_Explore_Darkside_ 70_Lp	.cache\3F\{3F13A42F-6A7B-A8A7-3635-3A6D9D462625}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Darkside_ 70_Lp		870728
+	99163619	Mus_Frag_Tower_GhostBells_80bpm_Lp	.cache\D1\{D1BDF236-4ACC-6E49-C1C1-EAC3ACC94C17}.wem		\Containers\Music\Roo_Music\Fragemented_Tower_Theme\Fragmented_Tower_Theme\Mus_Frag_Tower_GhostBells_80bpm_Lp		414898
+	103207521	Mus_Tower_Picolo_90bpm_Lp_01	.cache\86\{86CC9ED0-727A-B764-2FFF-C35986F42C75}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_Picolo_90bpm_Lp_01		474132
+	115873439	Mus_Alch_Lab_Xylo_90bpm_Lp	.cache\19\{194C99A8-962C-959C-61DC-4A87147A0425}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Mus_Alch_Lab_Xylo_90bpm_Lp		1000724
 	119559225	Mus_Level1_Explore_Cassette_ 70_Lp	.cache\92\{9263C557-A5C8-8ADD-950B-A2E5284E77C5}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Cassette_ 70_Lp		968641
+	121305076	Ghostly_Combat_Xylo_1_151bpm 	.cache\81\{811F7506-BCF4-7F14-4122-1B32A0FEB98E}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_Xylo_1_151bpm 		473818
 	158150885	Mus_Level1_Explore_Celli_ 70_Lp	.cache\B7\{B7D296CE-D0C3-9957-C9DB-3F11A0113727}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Celli_ 70_Lp		1104835
+	174476212	Mus_Alch_Lab_Celli_90bpm_Lp	.cache\46\{462B437E-DD09-A47F-530D-BF9E5508AEC3}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Mus_Alch_Lab_Celli_90bpm_Lp		1100640
 	191672266	On_A_Whim	.cache\74\{74EB5512-A554-8A8D-5CB3-4117DF4E0BD5}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\On_A_Whim		1308542
+	191878680	Ghostly_Combat_Obsolete_151bpm 	.cache\5B\{5BC84C36-4720-E42A-42BA-119D9A671EA3}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_Obsolete_151bpm 		379478
+	193388933	Mus_Tower_Glock_90bpm_Lp_01	.cache\EB\{EB06E2A7-746B-A30B-764D-D143EF194AF9}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_Glock_90bpm_Lp_01		769911
+	195054907	Mus_Alch_Lab_Smol_Percs_90bpm_Lp	.cache\1A\{1AABA217-3003-7A3A-A7D8-D8447C400BDE}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Mus_Alch_Lab_Smol_Percs_90bpm_Lp		944178
+	207835494	Mus_Tower_Violins_90bpm_Lp_01	.cache\76\{76E7FEDC-3D3B-F926-6877-22BC19573B86}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_Violins_90bpm_Lp_01		663859
 	233374379	Mus_Level1_Explore_Ghost_Vibe_ 70_Lp	.cache\B7\{B78CD0C7-19BD-CAB8-9673-40A89E336BE5}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Ghost_Vibe_ 70_Lp		933459
+	234500700	Ghostly_Combat_Marimba_151bpm 	.cache\32\{32485B20-0046-95E0-DD9B-7C280FE0849F}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_Marimba_151bpm 		522579
+	258657768	Ghostly_Combat_Small_Percs_Beat_151bpm 	.cache\C6\{C6D429B0-EA4E-8EFF-B32F-EE944C1D3648}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_Small_Percs_Beat_151bpm 		1137758
+	328095955	Mus_Frag_Tower_Fell_80bpm_Lp	.cache\0C\{0C217974-B5BC-F23E-A0AB-75713CBEF1DC}.wem		\Containers\Music\Roo_Music\Fragemented_Tower_Theme\Fragmented_Tower_Theme\Mus_Frag_Tower_Fell_80bpm_Lp		506685
+	342161498	Mus_Frag_Tower_Harp_80bpm_Lp	.cache\91\{91C29A65-ACF1-CDE3-E8E6-303709A2F49E}.wem		\Containers\Music\Roo_Music\Fragemented_Tower_Theme\Fragmented_Tower_Theme\Mus_Frag_Tower_Harp_80bpm_Lp		428033
+	345749373	Ghostly_Combat_Violas_151bpm 	.cache\48\{4802A8F6-7CE3-27CC-2D12-9DFDBF0350FE}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_Violas_151bpm 		387472
+	349891908	Mus_Tower_808_90bpm_Lp	.cache\3F\{3F5953B6-FEBA-1526-6AA3-F8B51E895B39}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_808_90bpm_Lp		652334
+	361175457	Mus_Frag_Tower_VIolas_80bpm_Lp	.cache\DB\{DB7101B9-AC5C-168F-15FE-6A1E24AD54C9}.wem		\Containers\Music\Roo_Music\Fragemented_Tower_Theme\Fragmented_Tower_Theme\Mus_Frag_Tower_VIolas_80bpm_Lp		467600
+	367391956	Ghostly_Combat_Accordion_Beat_151bpm 	.cache\1B\{1B009273-1484-9D08-BE0E-9547B3E03DD8}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_Accordion_Beat_151bpm 		999530
+	381407010	Mus_Alch_Lab_Mini_Punk_90bpm_Lp	.cache\5D\{5D098BD8-A6EE-4E0E-FEC0-C65E6DEBC092}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Mus_Alch_Lab_Mini_Punk_90bpm_Lp		1059901
+	385496281	Mus_Alch_Lab_Ghost_90bpm_Lp	.cache\3F\{3F597BED-D507-972D-376E-8EEE2100A3F4}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Mus_Alch_Lab_Ghost_90bpm_Lp		202342
 	403077359	Mus_Level1_Explore_Chiptune_ 70_Lp	.cache\E2\{E2CFF557-5C6F-1EE9-8652-0FB60360DD1F}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Chiptune_ 70_Lp		767059
+	403704639	Mus_Alch_Lab_String_Bass_90bpm_Lp	.cache\0F\{0F62E2E7-4F1B-712C-2627-69161EDF65CB}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Mus_Alch_Lab_String_Bass_90bpm_Lp		1062696
+	412989388	Ghostly_Combat_String_Bass_151bpm 	.cache\E5\{E512350B-0E2C-1C69-E8CE-B0733ADAE8AA}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_String_Bass_151bpm 		788970
+	414007034	Ghostly_Combat_Cassette_151bpm 	.cache\7E\{7EFE68E9-396E-BEE2-0B8B-E833158256A3}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_Cassette_151bpm 		417283
+	426463809	Mus_Alch_Lab_Glock_90bpm_Lp	.cache\47\{471BB0ED-5066-C49F-0E4A-5DDDBA421E78}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Mus_Alch_Lab_Glock_90bpm_Lp		201445
+	433632481	Mus_Tower_Theramin_90bpm_Lp_01	.cache\34\{34633BBE-54FB-E5D6-32BE-F30070362DAB}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_Theramin_90bpm_Lp_01		1457689
+	443138520	Mus_Frag_Tower_Marimba_80bpm_Lp	.cache\1E\{1E1BCDA9-4835-1862-E741-6A19F9534BAC}.wem		\Containers\Music\Roo_Music\Fragemented_Tower_Theme\Fragmented_Tower_Theme\Mus_Frag_Tower_Marimba_80bpm_Lp		515403
+	483607309	Ghostly_Combat_Cloudy_151bpm 	.cache\FA\{FA78D144-FBDE-6BB4-105C-7A3BF602D9BA}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_Cloudy_151bpm 		379495
+	501383167	Mus_Alch_Lab_Theramin_90bpm_Lp	.cache\34\{3401F026-9E0A-041B-45DD-B8C065D672D9}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Mus_Alch_Lab_Theramin_90bpm_Lp		375533
+	517222400	Ghostly_Combat_Piano_151bpm 	.cache\8F\{8F4536C1-FBAF-AD90-7A36-AD8580C9DE30}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_Piano_151bpm 		709864
+	532438646	Mus_Alch_Lab_Cassette_Deck_90bpm_Lp	.cache\B3\{B34A195B-08E6-6D86-41A4-839203D44916}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Mus_Alch_Lab_Cassette_Deck_90bpm_Lp		468478
+	538527679	Ghostly_Combat_Intro_151bpm 	.cache\1A\{1ADB39A9-D142-2DEB-3050-B81DF7551885}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Intro_151bpm\Ghostly_Combat_Intro_151bpm 		103242
+	564332111	Ghostly_Combat_Xylo_2_151bpm 	.cache\7B\{7BF3DD6D-CB23-3676-ACF7-6F50664786B8}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_Xylo_2_151bpm 		374864
+	566442691	Mus_Tower_Ocarina_90bpm_Lp_01	.cache\BD\{BD439DC7-4711-61C1-9F92-F86AA875941F}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_Ocarina_90bpm_Lp_01		632899
+	568154116	Mus_Frag_Tower_V2_80bpm_Lp	.cache\57\{573416C3-9441-EB16-F130-5BE03C934433}.wem		\Containers\Music\Roo_Music\Fragemented_Tower_Theme\Fragmented_Tower_Theme\Mus_Frag_Tower_V2_80bpm_Lp		499549
 	579776136	Mus_Level1_Explore_Lulluby_ 70_Lp	.cache\F1\{F1E4DE66-CCFC-7806-5612-D19A0E3FB03C}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Lulluby_ 70_Lp		1239126
 	636397867	New Random Music Track_01	.cache\25\{25733E4D-BD7C-0ED3-160C-DFB762936A07}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\New Random Music Track_01		657314
+	665945349	Mus_Tower_Marimba_90bpm_Lp	.cache\61\{6181AFED-4ADD-88BE-615B-276639FE39F6}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_Marimba_90bpm_Lp		816838
+	672026521	Ghostly_Combat	.cache\EA\{EAFAADAA-CE8E-5622-799C-33862E26010B}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat		1179445
+	672530646	Mus_Tower_Flutes_90bpm_Lp_01	.cache\12\{129F7DF0-8C48-AAE1-D6EB-00E7FD394945}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_Flutes_90bpm_Lp_01		475844
+	679998732	Mus_Alch_Lab_V2_90bpm_Lp	.cache\B0\{B0061FAD-BC2D-0C27-1B00-F922A6B8BE04}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Mus_Alch_Lab_V2_90bpm_Lp		266673
+	690102682	Mus_Tower_Ghost_90bpm_Lp	.cache\09\{091116BE-740F-7EA6-FA43-7541D8A6A6C0}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_Ghost_90bpm_Lp		1215599
+	709117352	Mus_Alch_Lab_Android_90bpm_Lp	.cache\B8\{B8A4A297-5ED9-AA49-61A8-7E082C5B3B0E}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Mus_Alch_Lab_Android_90bpm_Lp		598348
+	731062129	Ghostly_Combat_V1_151bpm 	.cache\B9\{B93529EF-AC85-EC0A-12FA-C64F75A38531}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_V1_151bpm 		777944
+	775543714	Mus_Frag_Tower_WindMachine_80bpm_Lp	.cache\D3\{D30FBDF3-FBF1-2566-2077-CE82849A78CF}.wem		\Containers\Music\Roo_Music\Fragemented_Tower_Theme\Fragmented_Tower_Theme\Mus_Frag_Tower_WindMachine_80bpm_Lp		504247
+	777864378	Mus_Tower_Celli_90bpm_Lp	.cache\45\{452B46E3-C0E4-FAAC-48F2-6FEDFE8C4C04}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_Celli_90bpm_Lp		607660
+	790536303	Mus_Frag_Tower_Celli2_80bpm_Lp	.cache\48\{48A4D20A-440B-8C8B-9FAC-C00078540AD8}.wem		\Containers\Music\Roo_Music\Fragemented_Tower_Theme\Fragmented_Tower_Theme\Mus_Frag_Tower_Celli2_80bpm_Lp		487715
+	794555705	Mus_Tower_SmallPercussion_90bpm_Lp_01	.cache\AC\{AC03C5B2-ED12-543F-809E-711D13C2610D}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_SmallPercussion_90bpm_Lp_01		901593
 	799139141	Mus_Level1_Explore_Ticki_ 70_Lp	.cache\FB\{FB84EFEE-E090-4E6B-E8FD-0AA8FB6F6084}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Ticki_ 70_Lp		1146301
+	802747012	Mus_Alch_Lab_V1_90bpm_Lp	.cache\71\{7140EF6E-0F87-A2A3-F340-791B522D191C}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Mus_Alch_Lab_V1_90bpm_Lp		988642
+	804490685	Ghostly_Combat_Chiptune_Beat_151bpm 	.cache\20\{2012D8A6-E4B4-C33D-2CEE-F4FA0D5D873A}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_Chiptune_Beat_151bpm 		949095
+	832257286	Mus_Frag_Tower_StringBass_80bpm_Lp	.cache\87\{87A9ABB9-C942-F91E-7FA6-96EF3AD39668}.wem		\Containers\Music\Roo_Music\Fragemented_Tower_Theme\Fragmented_Tower_Theme\Mus_Frag_Tower_StringBass_80bpm_Lp		459295
+	855792249	Mus_Alch_Lab_Violas_90bpm_Lp	.cache\4A\{4A027981-1B18-8FB4-421F-DBE6D278B5C7}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Mus_Alch_Lab_Violas_90bpm_Lp		650168
+	868072409	Fragmented_Tower	.cache\9A\{9A7514E5-5DDE-7DA4-F6EA-5C2F8827E869}.wem		\Containers\Music\Roo_Music\Fragemented_Tower_Theme\Fragmented_Tower_Theme\Fragmented_Tower		569892
 	869195499	Mus_Level1_Explore_Violin_ 70_Lp	.cache\65\{65755E3C-493B-3A16-D78D-FB53E3867669}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Violin_ 70_Lp		903169
+	875992795	Ghostly_Combat_Ghost_151bpm 	.cache\16\{16735371-0C42-760B-8872-9DF5B42F9FFE}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_Ghost_151bpm 		557920
+	902942149	Ghostly_Combat_Celli_151bpm 	.cache\FE\{FE05B0F5-2893-24E7-080F-C4382261E4B2}.wem		\Containers\Music\Roo_Music\Ghostly_Combat_Theme\Ghostly_Combat_Theme\Ghostly_Combat_Celli_151bpm 		803378
+	910599650	Mus_Tower_BassDrum_90bpm_Lp_01	.cache\2D\{2DBD0661-7E55-BFA6-E9D2-400D30FE9DFA}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_BassDrum_90bpm_Lp_01		555969
+	922472994	Mus_Frag_Tower_Celli1_80bpm_Lp	.cache\85\{85C6078C-F268-8BAE-8CD7-2C90AE3AF819}.wem		\Containers\Music\Roo_Music\Fragemented_Tower_Theme\Fragmented_Tower_Theme\Mus_Frag_Tower_Celli1_80bpm_Lp		487392
+	954627652	Mus_Frag_Tower_V1_80bpm_Lp	.cache\AA\{AAFC06B2-590A-3801-7136-7EFF6C42AF5A}.wem		\Containers\Music\Roo_Music\Fragemented_Tower_Theme\Fragmented_Tower_Theme\Mus_Frag_Tower_V1_80bpm_Lp		519800
 	973382843	Mus_Level1_Explore_Bowl_ 70_Lp	.cache\D3\{D37C7F45-65EA-A4D6-8F58-75C9220F2CE2}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Bowl_ 70_Lp		899506
+	1000457029	Mus_Frag_Tower_808_80bpm_Lp	.cache\91\{913B29DD-6925-3A46-EFAB-A4CC47238C52}.wem		\Containers\Music\Roo_Music\Fragemented_Tower_Theme\Fragmented_Tower_Theme\Mus_Frag_Tower_808_80bpm_Lp		487017
 	1001806393	Mus_Level1_Explore_Bass_ 70_Lp	.cache\82\{82A70157-12AA-D4C5-F834-D2859434796E}.wem		\Containers\Music\Roo_Music\Explore\Vertical_Composition\Mus_Level1_Explore_Bass_ 70_Lp		1034732
+	1031570488	Alchemy_Lab_Theme	.cache\03\{036024DB-1BF4-902B-F405-98D6252A6FF5}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Alchemy_Lab_Theme		1365406
 	1040865389	Wizard_Tower_Theme	.cache\AA\{AA6FA1BB-B8A0-21D8-F9EE-60AA7428F651}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Wizard_Tower_Theme		1663855
+	1044015329	Mus_Frag_Tower_SmolPercs_80bpm_Lp	.cache\B1\{B17C77DA-2E1E-E5C9-6B3B-1E337D811709}.wem		\Containers\Music\Roo_Music\Fragemented_Tower_Theme\Fragmented_Tower_Theme\Mus_Frag_Tower_SmolPercs_80bpm_Lp		413226
+	1049641489	Mus_Tower_StringBass_90bpm_Lp	.cache\CA\{CAA1871E-6F19-A464-AC22-CF8A43994617}.wem		\Containers\Music\Roo_Music\Wizard_Tower_Theme\Wizard_Tower_Theme\Mus_Tower_StringBass_90bpm_Lp		1331629
+	1064318371	Mus_Alch_Lab_Nebulizer_90bpm_Lp	.cache\66\{66DF468F-7E3B-D756-41E3-C5AFA111B785}.wem		\Containers\Music\Roo_Music\Alchemy_Lab_Theme\Alchemy_Lab_Theme\Mus_Alch_Lab_Nebulizer_90bpm_Lp		1065387
 

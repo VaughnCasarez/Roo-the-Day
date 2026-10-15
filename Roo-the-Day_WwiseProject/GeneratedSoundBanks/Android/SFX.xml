@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="16" SoundBankVersion="172">
+	<SoundBanks>
+		<SoundBank Id="393239870" Type="User" GUID="{4921EAAD-CA4C-4412-94C7-61065520BE68}" Language="SFX" Hash="{384215DA-E689-CB4A-E252-BED38F01A2DC}">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+			<Media>
+				<File Id="44296163" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstop_Wood_SFX\plr_footstep_wood_01.wav</ShortName>
+					<CachePath>F2/{F2D13F5B-BDA1-878B-A0F1-659BE675B6AE}.wem</CachePath>
+				</File>
+				<File Id="123136249" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_Stone_SFX\plr_footstep_stone_03.wav</ShortName>
+					<CachePath>A8/{A87B889D-50CF-32CE-AC38-4972107E70DB}.wem</CachePath>
+				</File>
+				<File Id="165649646" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstop_Wood_SFX\plr_footstep_wood_05.wav</ShortName>
+					<CachePath>AE/{AE9E64EF-46CC-1B8E-6660-50E60FD1A5F9}.wem</CachePath>
+				</File>
+				<File Id="171118137" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstop_Wood_SFX\plr_footstep_wood_02.wav</ShortName>
+					<CachePath>63/{63D50D65-9E89-E19B-89C2-50D50FB60D8B}.wem</CachePath>
+				</File>
+				<File Id="193669521" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstop_Wood_SFX\plr_footstep_wood_04.wav</ShortName>
+					<CachePath>1F/{1F614C14-3025-179A-163C-1C8A855F71A6}.wem</CachePath>
+				</File>
+				<File Id="284000489" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_Stone_SFX\plr_footstep_stone_01.wav</ShortName>
+					<CachePath>99/{99B62EBD-7664-773E-8CE8-B53C3DE1D180}.wem</CachePath>
+				</File>
+				<File Id="374801522" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_Stone_SFX\plr_footstep_stone_04.wav</ShortName>
+					<CachePath>B0/{B0E7FB56-0A8A-0076-CDED-42BD03E75D48}.wem</CachePath>
+				</File>
+				<File Id="665730043" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_Stone_SFX\plr_footstep_stone_05.wav</ShortName>
+					<CachePath>51/{51339C13-F41E-8680-F677-ACA03DD74141}.wem</CachePath>
+				</File>
+				<File Id="724956346" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_Stone_SFX\plr_footstep_stone_02.wav</ShortName>
+					<CachePath>F9/{F9C3920A-1BC1-F497-F004-87A7B5E31C46}.wem</CachePath>
+				</File>
+				<File Id="918920416" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstop_Wood_SFX\plr_footstep_wood_03.wav</ShortName>
+					<CachePath>01/{01E5D471-02FC-AC8A-F0D3-184CD92E69BA}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2143838950" Name="Footsteps_SFX" ObjectPath="\Events\SFX\Footsteps_SFX" GUID="{0E9269E9-1AF2-4E32-AC7B-C0DE11CE5D6A}" DurationType="OneShot" DurationMin="0.26939583" DurationMax="0.53964585">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2143838950" Id="2058049674" GUID="{79BD1526-F00A-445C-AA21-762A1DD240E6}"/>
+							<MediaRefs>
+								<MediaRef Id="44296163"/>
+								<MediaRef Id="165649646"/>
+								<MediaRef Id="171118137"/>
+								<MediaRef Id="193669521"/>
+								<MediaRef Id="918920416"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2143838950" Id="1216965916" GUID="{F369076E-BC51-4C0C-9A51-85E05EEB6637}"/>
+							<MediaRefs>
+								<MediaRef Id="123136249"/>
+								<MediaRef Id="284000489"/>
+								<MediaRef Id="374801522"/>
+								<MediaRef Id="665730043"/>
+								<MediaRef Id="724956346"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3594558967" Name="Obj_Pickup_SFX" ObjectPath="\Events\SFX\Obj_Pickup_SFX" GUID="{C5DDFD46-2809-4BD2-B69F-40C44EEF8CB0}" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="2143838950" Name="FootSteps_SFX" ObjectPath="\Switches\Default Work Unit\FootSteps_SFX" GUID="{146648BC-0D8B-4B75-9E85-F713E7699042}">
+					<Switches>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\FootSteps_SFX\Stone" GUID="{F369076E-BC51-4C0C-9A51-85E05EEB6637}"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\FootSteps_SFX\Wood" GUID="{79BD1526-F00A-445C-AA21-762A1DD240E6}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{FAF6CBA7-CBDD-5556-8566-18D7DAEF90CD}</FileHash>
+</SoundBanksInfo>
