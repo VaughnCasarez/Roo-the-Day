@@ -32,6 +32,7 @@ public class MovementRecognizer : MonoBehaviour
     private List<Gesture> trainingSet = new List<Gesture>();
 
     private bool isMoving = false;
+    private const string SPELLS_DIRNAME = "Spells";
 
     private List<Vector3> positionsList = new List<Vector3>();
 
@@ -43,9 +44,10 @@ public class MovementRecognizer : MonoBehaviour
 
     void Start()
     {
+        string directoryPath = Path.Combine(Application.dataPath, SPELLS_DIRNAME + "/");
         string[] gestureFiles =
             Directory.GetFiles(
-                Application.persistentDataPath,
+                directoryPath,
                 "*.xml"
             );
 
@@ -216,7 +218,9 @@ public class MovementRecognizer : MonoBehaviour
             );
 
             string fileName =
-                Application.persistentDataPath
+                Application.dataPath
+                + "/"
+                + SPELLS_DIRNAME
                 + "/"
                 + newGestureName
                 + ".xml";

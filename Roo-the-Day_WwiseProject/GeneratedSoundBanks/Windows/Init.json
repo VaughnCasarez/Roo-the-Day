@@ -10,17 +10,17 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{666C1970-EC51-C5D1-39FC-9A4BF909492B}",
+    "Hash": "{142B2496-FDD8-852D-54B3-B05B87694909}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
      "Custom": [
       {
-       "Id": "314234304",
+       "Id": "39489390",
        "Name": "Parametric EQ (Custom)",
-       "ObjectPath": "\\Busses\\Default Work Unit\\Music\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
-       "GUID": "{032A9C1B-75C8-404D-9132-B9A16F10A6B1}",
+       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Passthrough\\Music\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{8F9569F4-A3C2-41F9-8B91-A0A1760085EF}",
        "LibName": "Wwise Parametric EQ",
        "LibId": "6881283"
       }
@@ -33,6 +33,14 @@
        "GUID": "{1C29A3DC-BFFA-4C51-B258-B512C4D4D0B5}",
        "LibName": "No Output",
        "LibId": "11862023"
+      },
+      {
+       "Id": "3576015694",
+       "Name": "Meta_XR_Audio_Sink",
+       "ObjectPath": "\\Devices\\Default Work Unit\\Meta_XR_Audio_Sink",
+       "GUID": "{67F229E4-505E-4FCF-B234-FA5F99252D38}",
+       "LibName": "Meta XR Audio Sink",
+       "LibId": "9703591"
       },
       {
        "Id": "3859886410",
@@ -52,14 +60,20 @@
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      },
      {
+      "Id": "2804736953",
+      "Name": "Passthrough",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Passthrough",
+      "GUID": "{D626B1B6-EA41-47A2-BAE6-D6135B91D951}"
+     },
+     {
       "Id": "3991942870",
       "Name": "Music",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Music",
-      "GUID": "{695EE0D3-6E1F-441A-87A9-BF489D05F507}",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Passthrough\\Music",
+      "GUID": "{8BCC3DD3-B793-421F-A763-D70A695F3DAA}",
       "PluginRefs": {
        "Custom": [
         {
-         "Id": "314234304"
+         "Id": "39489390"
         }
        ]
       }
@@ -109,6 +123,12 @@
       "GUID": "{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"
      },
      {
+      "Id": "3677180323",
+      "Name": "Health",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Health",
+      "GUID": "{2F878F5D-A090-4AC9-A778-CEF1E8DA7609}"
+     },
+     {
       "Id": "3715662592",
       "Name": "SS_Air_Storm",
       "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Storm",
@@ -125,6 +145,86 @@
       "Name": "SS_Air_Turbulence",
       "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Turbulence",
       "GUID": "{EDA87B19-73AA-40A0-9F19-2073606DB710}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "444815956",
+      "Name": "PlayerLife",
+      "ObjectPath": "\\States\\Default Work Unit\\PlayerLife",
+      "GUID": "{436DF7A7-FB2C-4A63-8631-C7BD52B4130B}",
+      "States": [
+       {
+        "Id": "655265632",
+        "Name": "Alive",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerLife\\Alive",
+        "GUID": "{5FAC6430-65D5-43B3-BF0C-ED8A3B268BCD}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerLife\\None",
+        "GUID": "{23CD355D-8214-4363-9E1A-EDB3901E8058}"
+       },
+       {
+        "Id": "2791675679",
+        "Name": "Defeated",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerLife\\Defeated",
+        "GUID": "{B7C8B7A4-42BA-413D-904E-2BDDC17947D0}"
+       }
+      ]
+     },
+     {
+      "Id": "762757699",
+      "Name": "Gameplay_State",
+      "ObjectPath": "\\States\\Default Work Unit\\Gameplay_State",
+      "GUID": "{568F1118-F348-45B2-89AC-9DD037660E50}",
+      "States": [
+       {
+        "Id": "579523862",
+        "Name": "Explore",
+        "ObjectPath": "\\States\\Default Work Unit\\Gameplay_State\\Explore",
+        "GUID": "{F9C492F4-1CBD-41D5-A750-E9E4624EBE5A}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Gameplay_State\\None",
+        "GUID": "{466EADE2-AD39-4AC4-A5FC-994D2985B55D}"
+       },
+       {
+        "Id": "1737926756",
+        "Name": "Tower",
+        "ObjectPath": "\\States\\Default Work Unit\\Gameplay_State\\Tower",
+        "GUID": "{FE034ED3-AB8F-442F-BEFD-5D9006365D42}"
+       }
+      ]
+     },
+     {
+      "Id": "3826569560",
+      "Name": "Music_State",
+      "ObjectPath": "\\States\\Default Work Unit\\Music_State",
+      "GUID": "{AC5F1236-247C-4852-A9C5-D8EE836A928F}",
+      "States": [
+       {
+        "Id": "89505537",
+        "Name": "Gameplay",
+        "ObjectPath": "\\States\\Default Work Unit\\Music_State\\Gameplay",
+        "GUID": "{48BA6CEB-0356-4468-AD38-3ABAF9A7DD0B}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Music_State\\None",
+        "GUID": "{B6C73C3E-BA27-45BE-85AD-12EA24036CBB}"
+       },
+       {
+        "Id": "1560169506",
+        "Name": "Boss",
+        "ObjectPath": "\\States\\Default Work Unit\\Music_State\\Boss",
+        "GUID": "{5E436AB3-DBF1-4886-8796-80EF4850AF72}"
+       }
+      ]
      }
     ],
     "AcousticTextures": [
@@ -606,6 +706,6 @@
     ]
    }
   ],
-  "FileHash": "{63814F78-3C2D-9CD1-1088-0D4A41FC941B}"
+  "FileHash": "{28EA0474-0214-D6E0-E368-3A5F75660BD3}"
  }
 }

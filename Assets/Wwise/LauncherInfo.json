@@ -18,15 +18,15 @@
         },
         {
             "id": "DeploymentPlatforms",
+            "valueId": "Android"
+        },
+        {
+            "id": "DeploymentPlatforms",
             "valueId": "Mac"
         },
         {
             "id": "DeploymentPlatforms",
             "valueId": "Windows"
-        },
-        {
-            "id": "DeploymentPlatforms",
-            "valueId": "Android"
         }
     ]
 }
