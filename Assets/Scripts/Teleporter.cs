@@ -9,12 +9,9 @@ public class Teleporter : MonoBehaviour
 {
     [SerializeField, Tooltip("Assign the portal that sends you back the the portal you came though (like your orange to your blue)")]
     private Teleporter m_linkedPortal;
-    [SerializeField] 
-    private Camera m_teleporterCamera;
 
     public bool IsPortalReady { get; set; }
 
-    #region Unity Messages
     private void OnTriggerEnter(Collider other)
     {
         if (!IsPortalReady)
@@ -30,35 +27,6 @@ public class Teleporter : MonoBehaviour
         }
 
         Teleport(player);
-    }
-    private void OnEnable()
-    {
-        RenderPipelineManager.beginCameraRendering += UpdateCamera;
-    }
-
-    private void OnDisable()
-    {
-        RenderPipelineManager.beginCameraRendering -= UpdateCamera;
-    }
-
-    #endregion
-
-    // Thank you Unity people
-    // Source: https://www.youtube.com/watch?v=TkzASwVgnj8
-    private void UpdateCamera(ScriptableRenderContext context, Camera camera)
-    {
-        if ((camera.cameraType == CameraType.Game || camera.cameraType == CameraType.SceneView) && camera.tag != m_teleporterCamera.tag)
-        {
-            m_teleporterCamera.projectionMatrix = camera.projectionMatrix; // Match matrices
-
-            var relativePosition = transform.InverseTransformPoint(camera.transform.position);
-            relativePosition = Vector3.Scale(relativePosition, new Vector3(-1, 1, -1));
-            m_teleporterCamera.transform.position = m_linkedPortal.transform.TransformPoint(relativePosition);
-
-            var relativeRotation = transform.InverseTransformDirection(camera.transform.forward);
-            relativeRotation = Vector3.Scale(relativeRotation, new Vector3(-1, 1, -1));
-            m_teleporterCamera.transform.forward = m_linkedPortal.transform.TransformDirection(relativeRotation);
-        }
     }
 
     void Teleport(XROrigin player)
