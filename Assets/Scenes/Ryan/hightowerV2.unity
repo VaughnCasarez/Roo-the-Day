@@ -8450,6 +8450,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlashableVines
       objectReference: {fileID: 0}
+    - target: {fileID: 8759126688409119840, guid: d8dd66090b530834b8f1dfe6fc41a831, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
