@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using PDollarGestureRecognizer;
-using System.IO;
 using UnityEngine.Events;
 
 public class MovementRecognizer : MonoBehaviour
@@ -23,6 +22,8 @@ public class MovementRecognizer : MonoBehaviour
 
     public float minimumGestureDistance = 0.30f;
     public float maximumGestureDistance = 1.20f;
+
+    [SerializeField] private TextAsset[] gestureXmlFiles = new TextAsset[0];
 
     [System.Serializable]
     public class UnityStringEvent : UnityEvent<string> { }
@@ -44,18 +45,15 @@ public class MovementRecognizer : MonoBehaviour
 
     void Start()
     {
-        string directoryPath = Path.Combine(Application.dataPath, SPELLS_DIRNAME + "/");
-        string[] gestureFiles =
-            Directory.GetFiles(
-                directoryPath,
-                "*.xml"
-            );
-
-        foreach (var item in gestureFiles)
+        foreach (TextAsset gestureXml in gestureXmlFiles)
         {
-            trainingSet.Add(
-                GestureIO.ReadGestureFromFile(item)
-            );
+            if (gestureXml == null)
+            {
+                Debug.LogWarning("A gesture XML file is not assigned.", this);
+                continue;
+            }
+
+            trainingSet.Add(GestureIO.ReadGestureFromXML(gestureXml.text));
         }
     }
 
