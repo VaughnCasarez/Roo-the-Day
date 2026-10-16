@@ -1746,8 +1746,10 @@ MonoBehaviour:
   newPositionThresholdDistance: 0.05
   debugCubePrefab: {fileID: 1854197611900650408, guid: c444e737a4fcdbe4eaac44bd297f8634, type: 3}
   creationMode: 0
-  newGestureName: ManipulateSpellManager
+  newGestureName: hdfijdsahkfjahg
   recognitionThreshold: 0.9
+  minimumGestureDistance: 0.3
+  maximumGestureDistance: 1.2
   OnRecognized:
     m_PersistentCalls:
       m_Calls:
