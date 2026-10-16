@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Gesture Name = "MusicManager">
+	<Stroke>
+		<Point X = "1152.449" Y = "468.7934" T = "0" Pressure = "0" />
+		<Point X = "1154.708" Y = "433.0094" T = "0" Pressure = "0" />
+		<Point X = "1173.889" Y = "353.5593" T = "0" Pressure = "0" />
+		<Point X = "1200.016" Y = "243.14" T = "0" Pressure = "0" />
+		<Point X = "1225.495" Y = "163.2254" T = "0" Pressure = "0" />
+		<Point X = "1255.79" Y = "77.91572" T = "0" Pressure = "0" />
+		<Point X = "1294.888" Y = "-25.69011" T = "0" Pressure = "0" />
+		<Point X = "1303.489" Y = "40.3905" T = "0" Pressure = "0" />
+		<Point X = "1336.662" Y = "109.7056" T = "0" Pressure = "0" />
+		<Point X = "1360.214" Y = "162.3262" T = "0" Pressure = "0" />
+		<Point X = "1376.811" Y = "213.9035" T = "0" Pressure = "0" />
+		<Point X = "1408.553" Y = "251.2738" T = "0" Pressure = "0" />
+		<Point X = "1345.664" Y = "293.357" T = "0" Pressure = "0" />
+		<Point X = "1292.014" Y = "325.1158" T = "0" Pressure = "0" />
+		<Point X = "1256.952" Y = "363.1552" T = "0" Pressure = "0" />
+		<Point X = "1225.783" Y = "395.9772" T = "0" Pressure = "0" />
+		<Point X = "1184.929" Y = "422.5259" T = "0" Pressure = "0" />
+	</Stroke>
+</Gesture>
