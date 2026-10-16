@@ -8,8 +8,12 @@ public class SpellSpawner : MonoBehaviour
 
     public void Spawn(string objectName)
     {
+        Debug.Log("SpellSpawner received: " + objectName);
+
         foreach (var item in objects)
         {
+            Debug.Log("Checking object: " + item.name);
+
             item.SetActive(objectName == item.name);
         }
     }
