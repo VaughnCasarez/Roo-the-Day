@@ -15,47 +15,68 @@ public class MovementRecognizer : MonoBehaviour
 
     public float newPositionThresholdDistance = 0.05f;
     public GameObject debugCubePrefab;
+
     public bool creationMode = true;
     public string newGestureName;
 
-    public float recognitionThreshold = 0.9f;
+    public float recognitionThreshold = 0.85f;
+
+    public float minimumGestureDistance = 0.30f;
+    public float maximumGestureDistance = 1.20f;
 
     [System.Serializable]
     public class UnityStringEvent : UnityEvent<string> { }
+
     public UnityStringEvent OnRecognized;
 
     private List<Gesture> trainingSet = new List<Gesture>();
+
     private bool isMoving = false;
+    private const string SPELLS_DIRNAME = "Spells";
+
     private List<Vector3> positionsList = new List<Vector3>();
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Store the wand's rotation at each recorded point so spells can use
+    // the direction the wand was facing during the gesture.
+    private List<Quaternion> rotationsList = new List<Quaternion>();
+
+    private List<GameObject> debugCubes = new List<GameObject>();
+
     void Start()
     {
-        string[] gestureFiles = Directory.GetFiles(Application.persistentDataPath, "*.xml");
+        string directoryPath = Path.Combine(Application.dataPath, SPELLS_DIRNAME + "/");
+        string[] gestureFiles =
+            Directory.GetFiles(
+                directoryPath,
+                "*.xml"
+            );
 
         foreach (var item in gestureFiles)
         {
-            trainingSet.Add(GestureIO.ReadGestureFromFile(item));
+            trainingSet.Add(
+                GestureIO.ReadGestureFromFile(item)
+            );
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        InputDevice device = InputDevices.GetDeviceAtXRNode(inputSource);
-        device.TryGetFeatureValue(inputButton, out bool isPressed);
+        InputDevice device =
+            InputDevices.GetDeviceAtXRNode(inputSource);
 
-        // Start The Movement
+        device.TryGetFeatureValue(
+            inputButton,
+            out bool isPressed
+        );
+
         if (!isMoving && isPressed)
         {
             StartMovement();
         }
-        // Ending The Movement
         else if (isMoving && !isPressed)
         {
             EndMovement();
         }
-        // Updating The Movement
         else if (isMoving && isPressed)
         {
             UpdateMovement();
@@ -64,64 +85,249 @@ public class MovementRecognizer : MonoBehaviour
 
     void StartMovement()
     {
+        ClearDebugCubes();
+
         Debug.Log("Start Movement");
+
         isMoving = true;
+
         positionsList.Clear();
-        positionsList.Add(movementSource.position);
-        if (debugCubePrefab)
+        rotationsList.Clear();
+
+        positionsList.Add(
+            movementSource.position
+        );
+
+        rotationsList.Add(
+            movementSource.rotation
+        );
+
+        SpawnDebugCube();
+    }
+
+    void UpdateMovement()
+    {
+        Vector3 lastPosition =
+            positionsList[positionsList.Count - 1];
+
+        float distanceFromLastPoint =
+            Vector3.Distance(
+                movementSource.position,
+                lastPosition
+            );
+
+        if (
+            distanceFromLastPoint
+            > newPositionThresholdDistance
+        )
         {
-            Destroy(Instantiate(debugCubePrefab, movementSource.position, Quaternion.identity), 3);
+            positionsList.Add(
+                movementSource.position
+            );
+
+            rotationsList.Add(
+                movementSource.rotation
+            );
+
+            SpawnDebugCube();
         }
     }
 
     void EndMovement()
     {
         Debug.Log("End Movement");
+
         isMoving = false;
 
-        // Create the gesture from the position list
-        Point[] pointArray = new Point[positionsList.Count];
-
-        for (int i = 0; i < positionsList.Count; i++)
+        if (positionsList.Count < 2)
         {
-            Vector2 screenPoint = Camera.main.WorldToScreenPoint(positionsList[i]);
-            pointArray[i] = new Point(screenPoint.x, screenPoint.y, 0);
+            Debug.Log("Not enough points recorded.");
+            return;
         }
 
-        Gesture newGesture = new Gesture(pointArray);
+        float gestureDistance =
+            Vector3.Distance(
+                positionsList[0],
+                positionsList[positionsList.Count - 1]
+            );
 
-        // Add a new gesture to training set
+        Debug.Log(
+            "Gesture Distance: "
+            + gestureDistance
+        );
+
+        // Reject gestures that are physically too short or too long.
+        if (!creationMode)
+        {
+            if (
+                gestureDistance
+                < minimumGestureDistance
+            )
+            {
+                Debug.Log(
+                    "Gesture rejected: too short."
+                );
+
+                return;
+            }
+
+            if (
+                gestureDistance
+                > maximumGestureDistance
+            )
+            {
+                Debug.Log(
+                    "Gesture rejected: too long."
+                );
+
+                return;
+            }
+        }
+
+        Point[] pointArray =
+            new Point[positionsList.Count];
+
+        for (
+            int i = 0;
+            i < positionsList.Count;
+            i++
+        )
+        {
+            Vector2 screenPoint =
+                Camera.main.WorldToScreenPoint(
+                    positionsList[i]
+                );
+
+            pointArray[i] = new Point(
+                screenPoint.x,
+                screenPoint.y,
+                0
+            );
+        }
+
+        Gesture newGesture =
+            new Gesture(pointArray);
+
         if (creationMode)
         {
-            newGesture.Name = newGestureName;
-            trainingSet.Add(newGesture);
+            newGesture.Name =
+                newGestureName;
 
-            string fileName = Application.persistentDataPath + "/" + newGestureName + ".xml";
-            GestureIO.WriteGesture(pointArray, newGestureName, fileName);
+            trainingSet.Add(
+                newGesture
+            );
+
+            string fileName =
+                Application.dataPath
+                + "/"
+                + SPELLS_DIRNAME
+                + "/"
+                + newGestureName
+                + ".xml";
+
+            GestureIO.WriteGesture(
+                pointArray,
+                newGestureName,
+                fileName
+            );
+
+            Debug.Log(
+                "Saved gesture: "
+                + newGestureName
+            );
+
+            ClearDebugCubes();
         }
-        // Recognize
         else
         {
-            Result result = PointCloudRecognizer.Classify(newGesture, trainingSet.ToArray());
-            Debug.Log(result.GestureClass + result.Score);
-            if (result.Score > recognitionThreshold)
+            Result result =
+                PointCloudRecognizer.Classify(
+                    newGesture,
+                    trainingSet.ToArray()
+                );
+
+            Debug.Log(
+                result.GestureClass
+                + " "
+                + result.Score
+            );
+
+            if (
+                result.Score
+                > recognitionThreshold
+            )
             {
-                OnRecognized.Invoke(result.GestureClass);
+                Debug.Log(
+                    "RECOGNIZED: "
+                    + result.GestureClass
+                );
+
+                OnRecognized.Invoke(
+                    result.GestureClass
+                );
+
+                ClearDebugCubes();
+            }
+            else
+            {
+                Debug.Log(
+                    "Gesture rejected: recognition score too low."
+                );
             }
         }
     }
 
-    void UpdateMovement()
+    void SpawnDebugCube()
     {
-        Debug.Log("UpdateMovement");
-        Vector3 lastPosition = positionsList[positionsList.Count - 1];
-        if (Vector3.Distance(movementSource.position, lastPosition) > newPositionThresholdDistance)
+        if (debugCubePrefab == null)
         {
-            positionsList.Add(movementSource.position);
-            if (debugCubePrefab)
+            return;
+        }
+
+        GameObject cube =
+            Instantiate(
+                debugCubePrefab,
+                movementSource.position,
+                Quaternion.identity
+            );
+
+        debugCubes.Add(cube);
+    }
+
+    void ClearDebugCubes()
+    {
+        foreach (GameObject cube in debugCubes)
+        {
+            if (cube != null)
             {
-                Destroy(Instantiate(debugCubePrefab, movementSource.position, Quaternion.identity), 3);
+                Destroy(cube);
             }
         }
+
+        debugCubes.Clear();
+    }
+
+    public Vector3 GetGestureMidpoint()
+    {
+        if (positionsList.Count == 0)
+        {
+            return movementSource.position;
+        }
+
+        return positionsList[
+            positionsList.Count / 2
+        ];
+    }
+
+    public Quaternion GetGestureMidRotation()
+    {
+        if (rotationsList.Count == 0)
+        {
+            return movementSource.rotation;
+        }
+
+        return rotationsList[
+            rotationsList.Count / 2
+        ];
     }
 }
