@@ -3282,6 +3282,8 @@ MonoBehaviour:
   creationMode: 0
   newGestureName: 
   recognitionThreshold: 0.9
+  minimumGestureDistance: 0.3
+  maximumGestureDistance: 1.2
   OnRecognized:
     m_PersistentCalls:
       m_Calls:
@@ -8396,6 +8398,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142231541}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1973220931483475527
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4386583699470083423, guid: d8dd66090b530834b8f1dfe6fc41a831, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.462
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386583699470083423, guid: d8dd66090b530834b8f1dfe6fc41a831, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.404
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386583699470083423, guid: d8dd66090b530834b8f1dfe6fc41a831, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.516
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386583699470083423, guid: d8dd66090b530834b8f1dfe6fc41a831, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386583699470083423, guid: d8dd66090b530834b8f1dfe6fc41a831, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386583699470083423, guid: d8dd66090b530834b8f1dfe6fc41a831, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386583699470083423, guid: d8dd66090b530834b8f1dfe6fc41a831, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386583699470083423, guid: d8dd66090b530834b8f1dfe6fc41a831, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386583699470083423, guid: d8dd66090b530834b8f1dfe6fc41a831, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386583699470083423, guid: d8dd66090b530834b8f1dfe6fc41a831, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759126688409119840, guid: d8dd66090b530834b8f1dfe6fc41a831, type: 3}
+      propertyPath: m_Name
+      value: SlashableVines
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d8dd66090b530834b8f1dfe6fc41a831, type: 3}
 --- !u!1001 &3004871440989725949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8688,3 +8747,4 @@ SceneRoots:
   - {fileID: 52855335}
   - {fileID: 1917956249}
   - {fileID: 2113229284}
+  - {fileID: 1973220931483475527}
