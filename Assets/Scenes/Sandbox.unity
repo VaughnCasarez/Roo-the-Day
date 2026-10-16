@@ -1746,7 +1746,7 @@ MonoBehaviour:
   newPositionThresholdDistance: 0.05
   debugCubePrefab: {fileID: 1854197611900650408, guid: c444e737a4fcdbe4eaac44bd297f8634, type: 3}
   creationMode: 0
-  newGestureName: hdfijdsahkfjahg
+  newGestureName: Skip
   recognitionThreshold: 0.9
   minimumGestureDistance: 0.3
   maximumGestureDistance: 1.2
@@ -2020,6 +2020,7 @@ MonoBehaviour:
   - {fileID: 1753294513}
   - {fileID: 1965148554}
   - {fileID: 53018621}
+  - {fileID: 1209513936}
 --- !u!4 &906774632
 Transform:
   m_ObjectHideFlags: 0
