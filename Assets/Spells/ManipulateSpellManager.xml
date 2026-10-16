@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Gesture Name = "ManipulateSpellManager">
+	<Stroke>
+		<Point X = "1134.296" Y = "406.9999" T = "0" Pressure = "0" />
+		<Point X = "1172.753" Y = "416.7664" T = "0" Pressure = "0" />
+		<Point X = "1225.626" Y = "411.9985" T = "0" Pressure = "0" />
+		<Point X = "1291.02" Y = "387.7261" T = "0" Pressure = "0" />
+		<Point X = "1341.791" Y = "355.7177" T = "0" Pressure = "0" />
+		<Point X = "1374.041" Y = "310.2521" T = "0" Pressure = "0" />
+		<Point X = "1397.952" Y = "245.766" T = "0" Pressure = "0" />
+		<Point X = "1375.326" Y = "189.7603" T = "0" Pressure = "0" />
+		<Point X = "1316.786" Y = "168.9149" T = "0" Pressure = "0" />
+		<Point X = "1265.438" Y = "154.1914" T = "0" Pressure = "0" />
+		<Point X = "1206.603" Y = "148.5039" T = "0" Pressure = "0" />
+		<Point X = "1138.825" Y = "182.3773" T = "0" Pressure = "0" />
+		<Point X = "1105.182" Y = "242.3526" T = "0" Pressure = "0" />
+		<Point X = "1093.733" Y = "289.8802" T = "0" Pressure = "0" />
+		<Point X = "1096.074" Y = "336.3116" T = "0" Pressure = "0" />
+		<Point X = "1115.151" Y = "373.7858" T = "0" Pressure = "0" />
+		<Point X = "1145.833" Y = "408.1551" T = "0" Pressure = "0" />
+	</Stroke>
+</Gesture>
