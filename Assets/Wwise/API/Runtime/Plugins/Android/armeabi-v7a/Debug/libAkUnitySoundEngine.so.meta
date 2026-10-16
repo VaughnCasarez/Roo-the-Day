@@ -14,6 +14,7 @@ PluginImporter:
     Android:
       enabled: 0
       settings:
+        CPU: ARMv7
         Is16KbAligned: false
     Any:
       enabled: 0
