@@ -16,16 +16,11 @@ public class SlashDamage : MonoBehaviour
             return;
         }
 
-        ghostHealth enemy = other.GetComponentInParent<ghostHealth>();
-
-        if (enemy != null)
+        if (other.TryGetComponent(out IDamageable damageable))
         {
-            // Prevent any additional collision events
             hasHit = true;
 
-            Debug.Log("Slash hit " + enemy.gameObject.name + " for " + damage + " damage.");
-
-            enemy.TakeDamage(damage);
+            damageable.Damage(damage);
 
             Destroy(gameObject);
         }

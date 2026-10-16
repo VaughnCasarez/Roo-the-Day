@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ghostHealth : MonoBehaviour
+public class ghostHealth : MonoBehaviour, IDamageable
 {
     [SerializeField] int maxHealth = 50;
 
@@ -9,24 +9,11 @@ public class ghostHealth : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-
-        Debug.Log(
-            gameObject.name + " spawned with "
-            + currentHealth + " HP."
-        );
     }
 
-    public void TakeDamage(int damage)
+    public void Damage(int amount)
     {
-        currentHealth -= damage;
-
-        Debug.Log(
-            gameObject.name
-            + " took "
-            + damage
-            + " damage. HP: "
-            + currentHealth
-        );
+        currentHealth -= amount;
 
         if (currentHealth <= 0)
         {
@@ -36,8 +23,6 @@ public class ghostHealth : MonoBehaviour
 
     void Die()
     {
-        Debug.Log(gameObject.name + " died!");
-
         Destroy(gameObject);
     }
 }
