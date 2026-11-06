@@ -9,7 +9,7 @@ public class PortalCamera : MonoBehaviour
 {
     [SerializeField] private Portal[] portals = new Portal[2];
     [SerializeField] private Camera portalCamera;
-    [SerializeField] private int iterations = 2; // 7 is far too expensive in VR (x2 eyes)
+    [SerializeField] private int iterations = 2;
 
     private static readonly int LeftTexId = Shader.PropertyToID("_LeftEyeTex");
     private static readonly int RightTexId = Shader.PropertyToID("_RightEyeTex");
